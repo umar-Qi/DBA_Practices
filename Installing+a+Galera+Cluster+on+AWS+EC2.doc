@@ -1,0 +1,676 @@
+Message-ID: <1220419904.3453.1684351755573.JavaMail.confluence@ip-10-0-20-29>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_3452_1682595068.1684351755572"
+
+------=_Part_3452_1682595068.1684351755572
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Installing a Galera Cluster on AWS EC2</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Installing a Galera Cluster on AWS EC2</h1>
+    <div class=3D"Section1">
+        <p class=3D"first-paragraph" style=3D"text-align: justify;">Amazon =
+Web Services (AWS) is one of the largest providers of virtual servers and o=
+ther web services. Through an account with AWS, using their EC2 (Elastic Co=
+mpute Cloud) platform, you can create virtual servers, known as<span>&nbsp;=
+</span><em>instances</em>, and choose the operating system distribution. Fr=
+om there you can log remotely into the instance like you would a physical s=
+erver, and install MySQL or MariaDB and Galera software. This means that yo=
+u can create multiple instances to form a Galera Cluster.</p>
+<p style=3D"text-align: justify;">This tutorial will explain the steps to c=
+reating instances on AWS, and how to install and configure the database and=
+ Galera software on each node. It=E2=80=99ll end by showing you how to star=
+t the cluster.</p>
+<p style=3D"text-align: justify;">We=E2=80=99re assuming you already have a=
+n account with AWS and know the basics of how to use the EC2 platform to cr=
+eate an instance and related aspects. We=E2=80=99ll focus instead on aspect=
+s relevant to forming a Galera Cluster.</p>
+<p class=3D"section-heading list-sub-header rubric" style=3D"text-align: ju=
+stify;">Encryption Key</p>
+<p style=3D"text-align: justify;">For this article, we=E2=80=99ll create th=
+ree nodes to be used in the cluster. To access these nodes, you=E2=80=99ll =
+need an encryption key. You can use an existing key, but we recommend creat=
+ing a new one specifically for the Galera. There are many tools to do so, s=
+uch as<span>&nbsp;</span><code class=3D"docutils literal notranslate"><span=
+ class=3D"pre">ssh-keygen</span></code>. See<span>&nbsp;</span><a class=3D"=
+external-link" style=3D"text-decoration: none;" href=3D"https://help.github=
+.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" r=
+el=3D"nofollow">Generating an SSH Key</a><span>&nbsp;</span>for instruction=
+s on how to do this.</p>
+<p style=3D"text-align: justify;">Once you have your encryption key, log in=
+to AWS and navigate to the EC2 console. Under<span>&nbsp;</span><em>Securit=
+y</em><span>&nbsp;</span>in the left margin, click on the<span>&nbsp;</span=
+><em>Key Pairs</em><span>&nbsp;</span>link. Click on the white<span>&nbsp;<=
+/span><em>Import Key Pair</em><span>&nbsp;</span>button. You can click on<s=
+pan>&nbsp;</span><em>Choose File</em><span>&nbsp;</span>to load a<span>&nbs=
+p;</span><code class=3D"docutils literal notranslate"><span class=3D"pre">.=
+pem</span></code><span>&nbsp;</span>file from your computer, or you can cop=
+y and paste the raw text from your key into the large box labeled,<span>&nb=
+sp;</span><em>Public Key Contents</em>. Give the key a name like,<span>&nbs=
+p;</span><em>galera-cluster</em>. When finished, click<span>&nbsp;</span><e=
+m>Import</em>.</p>
+<p class=3D"section-heading list-sub-header rubric" style=3D"text-align: ju=
+stify;">Creating AWS Instances</p>
+<p style=3D"text-align: justify;">With an encryption key in place, you=E2=
+=80=99re ready to create three instances on AWS. You could create more, but=
+ we=E2=80=99ll do three, which is the minimum recommended for a healthy clu=
+ster. In the EC2 console, click on<span>&nbsp;</span><em>Instances</em><spa=
+n>&nbsp;</span>in the left margin. That will show your existing instances i=
+n the main pane. Now click on the large blue button at the top labeled,<spa=
+n>&nbsp;</span><em>Launch Instances</em>.</p>
+<p style=3D"text-align: justify;">The first choice you=E2=80=99ll have to m=
+ake when creating a new instance is the operating system distribution. For =
+the examples in this article, we chose<span>&nbsp;</span><em>CentOS 7 (x86_=
+64) - with Updates HVM</em>. This is a 64-bit operating system.</p>
+<p style=3D"text-align: justify;">The second step is to choose an instance =
+type. Because we=E2=80=99re using this cluster as a training tool, we chose=
+<span>&nbsp;</span><code class=3D"docutils literal notranslate"><span class=
+=3D"pre">t2.micro</span></code><span>&nbsp;</span>since it=E2=80=99s<span>&=
+nbsp;</span><em>Free Tier Eligible</em>. This allows us to use it for a yea=
+r without having to pay anything.</p>
+<p style=3D"text-align: justify;">Next, you=E2=80=99ll be asked to&nbsp; &n=
+bsp;configure the details of the instance. The first box asks how many inst=
+ances you want to launch: enter 3. You can leave all of the other settings =
+at their default values.</p>
+<p style=3D"text-align: justify;">Adding storage is next. If you chose the =
+free tier as did we, you=E2=80=99ll have to accept the default of 8 gigabyt=
+es of storage. You may need more if you=E2=80=99re creating a cluster for p=
+roduction use. For our training purposes, this is plenty. The next screen i=
+s about adding tags, you can click past that.</p>
+<p style=3D"text-align: justify;">Then you=E2=80=99ll be asked to configure=
+ a security group. This is basically AWS=E2=80=99s firewall. Even if you al=
+ready have one for your existing instances, create a new one just for Galer=
+a. Name it something easy like,<span>&nbsp;</span><em>galera-servers</em>. =
+You=E2=80=99ll be able to give several inbound traffic rules related to the=
+ three nodes we=E2=80=99ll create and the ports they will need. Until we cr=
+eate the three instances, though, we won=E2=80=99t know their IP addresses.=
+ So, for now, just add a rule that allows you to log into the nodes. To do =
+this, select SSH type. For the source, click on the pull-down menu and choo=
+se<span>&nbsp;</span><em>My IP</em>=E2=80=94or choose<span>&nbsp;</span><em=
+>Custom</em><span>&nbsp;</span>and type in the IP address from which you=E2=
+=80=99ll log in (e.g.,<span>&nbsp;</span><code class=3D"docutils literal no=
+translate"><span class=3D"pre">12.127.17.72/32</span></code>).</p>
+<p style=3D"text-align: justify;">With that all done, click on the blue but=
+ton at the bottom right to review and launch the instance. It will show you=
+ the choices you made. If everything is fine, click<span>&nbsp;</span><em>L=
+aunch</em>.</p>
+<p><a class=3D"external-link" href=3D"https://galeracluster.com/library/_im=
+ages/aws-galera-instances.png" style=3D"text-decoration: none;" rel=3D"nofo=
+llow"><span class=3D"confluence-embedded-file-wrapper"><img class=3D"conflu=
+ence-embedded-image tutorial-screenshot confluence-external-resource" alt=
+=3D"AWS Instances" src=3D"https://galeracluster.com/library/_images/aws-gal=
+era-instances.png" data-image-src=3D"https://galeracluster.com/library/_ima=
+ges/aws-galera-instances.png"></span></a></p>
+<p style=3D"text-align: justify;">A dialog box will then appear asking you =
+to provide an encryption key. Click<span>&nbsp;</span><em>Choose an Existin=
+g Key Pair</em><span>&nbsp;</span>and select the one you created for Galera=
+. Then read and click the check-box for the warning and then click<span>&nb=
+sp;</span><em>Launch Instance</em>. That=E2=80=99ll begin the process of st=
+arting the instance.</p>
+<p style=3D"text-align: justify;">Now, click on the<span>&nbsp;</span><em>I=
+nstances</em><span>&nbsp;</span>link in the margin again to see state of th=
+e instances. It=E2=80=99ll take a little while before the new instances are=
+ running. You may want to label each instance something like,<span>&nbsp;</=
+span><em>galera - node 1</em>.</p>
+<p class=3D"section-heading list-sub-header rubric" style=3D"text-align: ju=
+stify;">Installing Software on Nodes</p>
+<p style=3D"text-align: justify;">When all three nodes are running, you=E2=
+=80=99re ready to install and configure the database and Galera software. C=
+heck the details of each instance to get the external IP address. Then use<=
+span>&nbsp;</span><code class=3D"docutils literal notranslate"><span class=
+=3D"pre">ssh</span></code><span>&nbsp;</span>to log into each node, using y=
+our the encryption key.</p>
+<p style=3D"text-align: justify;">It=E2=80=99s best to keep all three nodes=
+ the same. So update the software that=E2=80=99s already installed on each =
+node with a command-line package-management utility. Since we installed Cen=
+tOS on our nodes, we used<span>&nbsp;</span><code class=3D"docutils literal=
+ notranslate"><span class=3D"pre">yum</span></code><span>&nbsp;</span>on ea=
+ch like so:</p>
+<pre><span class=3D"go" style=3D"color: rgb(51,51,51);">sudo yum -y update<=
+/span>
+</pre>
+<p style=3D"text-align: justify;">We also installed<span>&nbsp;</span><code=
+ class=3D"docutils literal notranslate"><span class=3D"pre">rsync</span></c=
+ode>, which Galera will use to synchronize nodes when they first join the c=
+luster, or recovering nodes that have been offline for a while. We also ins=
+talled<span>&nbsp;</span><code class=3D"docutils literal notranslate"><span=
+ class=3D"pre">firewalld</span></code>, which provides a firewall.</p>
+<pre><span class=3D"go" style=3D"color: rgb(51,51,51);">sudo yum -y install=
+ rync firewalld</span>
+</pre>
+<p style=3D"text-align: justify;">When you=E2=80=99ve finished updating and=
+ installing basic software on all three nodes, you can then proceed to inst=
+alling the database and Galera software. For our purposes, we chose to inst=
+all MariaDB. If you=E2=80=99d prefer to use MySQL, see the article on<span>=
+&nbsp;</span><a href=3D"https://galeracluster.com/library/documentation/ins=
+tall-mysql.html" class=3D"external-link" style=3D"text-decoration: none;" r=
+el=3D"nofollow"><span class=3D"doc">Installing MySQL and Galera Cluster</sp=
+an></a>.</p>
+<p style=3D"text-align: justify;">To install MariaDB, we first used the Mar=
+iaDB repository (<a style=3D"text-decoration: none;" class=3D"external-link=
+" href=3D"https://downloads.mariadb.org/mariadb/repositories/" rel=3D"nofol=
+low">MariaDB Repository Generator</a>). We chose the CentOS distribution, t=
+he CentOS 7 (x86_64) release to match what we=E2=80=99ve installed on our n=
+odes. We then chose the MariaDB version 10.4. The repository tool gave us t=
+he lines we needed to copy into a new repo file,<span>&nbsp;</span><code cl=
+ass=3D"docutils literal notranslate"><span class=3D"pre">/etc/yum.repos.d/m=
+ariadb.repo</span></code>.</p>
+<p><a class=3D"external-link" style=3D"text-decoration: none;" href=3D"http=
+s://galeracluster.com/library/_images/mariadb-repository-tool-choices.png" =
+rel=3D"nofollow"><span class=3D"confluence-embedded-file-wrapper"><img clas=
+s=3D"confluence-embedded-image tutorial-screenshot confluence-external-reso=
+urce" alt=3D"MariaDB Repository Tool" src=3D"https://galeracluster.com/libr=
+ary/_images/mariadb-repository-tool-choices.png" data-image-src=3D"https://=
+galeracluster.com/library/_images/mariadb-repository-tool-choices.png"></sp=
+an></a></p>
+<p style=3D"text-align: justify;">Using<span>&nbsp;</span><code class=3D"do=
+cutils literal notranslate"><span class=3D"pre">yum</span></code><span>&nbs=
+p;</span>again, we executed the following from the command-line on each nod=
+e:</p>
+<pre><span class=3D"go" style=3D"color: rgb(51,51,51);">sudo yum install Ma=
+riaDB-server MariaDB-client</span>
+</pre>
+<p style=3D"text-align: justify;">That will install everything we need, inc=
+luding the Galera software since it=E2=80=99s shipped with MariaDB as of ve=
+rsion 10.4. When you=E2=80=99re finished doing this one each node, you=E2=
+=80=99ll be ready to configure the MariaDB and Galera.</p>
+<p class=3D"section-heading list-sub-header rubric" style=3D"text-align: ju=
+stify;">Configuring Software on Nodes</p>
+<p style=3D"text-align: justify;">Before starting MariaDB on each node, you=
+ need to configure it. To do this, edit the<span>&nbsp;</span><code class=
+=3D"docutils literal notranslate"><span class=3D"pre">my.cnf</span></code><=
+span>&nbsp;</span>file=E2=80=94or<span>&nbsp;</span><code class=3D"docutils=
+ literal notranslate"><span class=3D"pre">/etc/my.cnf.d/server.cnf</span></=
+code><span>&nbsp;</span>as we did. Add the following lines under the<span>&=
+nbsp;</span><code class=3D"docutils literal notranslate"><span class=3D"pre=
+">[mysqld]</span></code><span>&nbsp;</span>heading:</p>
+<pre><span class=3D"k" style=3D"color: rgb(38,70,109);">[mysqld]</span>
+<span class=3D"na" style=3D"color: rgb(64,112,160);">datadir</span><span cl=
+ass=3D"o" style=3D"color: rgb(102,102,102);">=3D</span><span class=3D"s" st=
+yle=3D"color: rgb(64,112,160);">/var/lib/mysql</span>
+<span class=3D"na" style=3D"color: rgb(64,112,160);">socket</span><span cla=
+ss=3D"o" style=3D"color: rgb(102,102,102);">=3D</span><span class=3D"s" sty=
+le=3D"color: rgb(64,112,160);">/var/lib/mysql/mysql.sock</span>
+<span class=3D"na" style=3D"color: rgb(64,112,160);">bind-address</span><sp=
+an class=3D"o" style=3D"color: rgb(102,102,102);">=3D</span><span class=3D"=
+s" style=3D"color: rgb(64,112,160);">0.0.0.0</span>
+<span class=3D"na" style=3D"color: rgb(64,112,160);">user</span><span class=
+=3D"o" style=3D"color: rgb(102,102,102);">=3D</span><span class=3D"s" style=
+=3D"color: rgb(64,112,160);">mysql</span>
+
+<span class=3D"na" style=3D"color: rgb(64,112,160);">default_storage_engine=
+</span><span class=3D"o" style=3D"color: rgb(102,102,102);">=3D</span><span=
+ class=3D"s" style=3D"color: rgb(64,112,160);">InnoDB</span>
+<span class=3D"na" style=3D"color: rgb(64,112,160);">innodb_autoinc_lock_mo=
+de</span><span class=3D"o" style=3D"color: rgb(102,102,102);">=3D</span><sp=
+an class=3D"s" style=3D"color: rgb(64,112,160);">2</span>
+<span class=3D"na" style=3D"color: rgb(64,112,160);">innodb_flush_log_at_tr=
+x_commit</span><span class=3D"o" style=3D"color: rgb(102,102,102);">=3D</sp=
+an><span class=3D"s" style=3D"color: rgb(64,112,160);">0</span>
+<span class=3D"na" style=3D"color: rgb(64,112,160);">innodb_buffer_pool_siz=
+e</span><span class=3D"o" style=3D"color: rgb(102,102,102);">=3D</span><spa=
+n class=3D"s" style=3D"color: rgb(64,112,160);">128M</span>
+
+<span class=3D"na" style=3D"color: rgb(64,112,160);">binlog_format</span><s=
+pan class=3D"o" style=3D"color: rgb(102,102,102);">=3D</span><span class=3D=
+"s" style=3D"color: rgb(64,112,160);">ROW</span>
+<span class=3D"na" style=3D"color: rgb(64,112,160);">log-error</span><span =
+class=3D"o" style=3D"color: rgb(102,102,102);">=3D</span><span class=3D"s" =
+style=3D"color: rgb(64,112,160);">/var/log/mysqld.log</span>
+</pre>
+<p style=3D"text-align: justify;">There are some basic parameters related t=
+o MariaDB and using the InnoDB storage engine=E2=80=94which is the only one=
+ that Galera uses. For parameters particular to Galera, add a<span>&nbsp;</=
+span><code class=3D"docutils literal notranslate"><span class=3D"pre">[gale=
+ra]</span></code><span>&nbsp;</span>section to the same configuration file:=
+</p>
+<pre><span class=3D"k" style=3D"color: rgb(38,70,109);">[galera]</span>
+<span class=3D"na" style=3D"color: rgb(64,112,160);">wsrep_on</span><span c=
+lass=3D"o" style=3D"color: rgb(102,102,102);">=3D</span><span class=3D"s" s=
+tyle=3D"color: rgb(64,112,160);">ON</span>
+<span class=3D"na" style=3D"color: rgb(64,112,160);">wsrep_provider</span><=
+span class=3D"o" style=3D"color: rgb(102,102,102);">=3D</span><span class=
+=3D"s" style=3D"color: rgb(64,112,160);">/usr/lib64/galera-4/libgalera_smm.=
+so</span>
+
+<span class=3D"na" style=3D"color: rgb(64,112,160);">wsrep_node_name</span>=
+<span class=3D"o" style=3D"color: rgb(102,102,102);">=3D</span><span class=
+=3D"s" style=3D"color: rgb(64,112,160);">'galera1'</span>
+<span class=3D"na" style=3D"color: rgb(64,112,160);">wsrep_node_address</sp=
+an><span class=3D"o" style=3D"color: rgb(102,102,102);">=3D</span><span cla=
+ss=3D"s" style=3D"color: rgb(64,112,160);">"172.31.19.208"</span>
+<span class=3D"na" style=3D"color: rgb(64,112,160);">wsrep_cluster_name</sp=
+an><span class=3D"o" style=3D"color: rgb(102,102,102);">=3D</span><span cla=
+ss=3D"s" style=3D"color: rgb(64,112,160);">'galera-training'</span>
+<span class=3D"na" style=3D"color: rgb(64,112,160);">wsrep_cluster_address<=
+/span><span class=3D"o" style=3D"color: rgb(102,102,102);">=3D</span><span =
+class=3D"s" style=3D"color: rgb(64,112,160);">"gcomm://172.31.19.208,172.31=
+.26.197,172.31.15.54"</span>
+
+<span class=3D"na" style=3D"color: rgb(64,112,160);">wsrep_provider_options=
+</span><span class=3D"o" style=3D"color: rgb(102,102,102);">=3D</span><span=
+ class=3D"s" style=3D"color: rgb(64,112,160);">"gcache.size=3D300M; gcache.=
+page_size=3D300M"</span>
+<span class=3D"na" style=3D"color: rgb(64,112,160);">wsrep_slave_threads</s=
+pan><span class=3D"o" style=3D"color: rgb(102,102,102);">=3D</span><span cl=
+ass=3D"s" style=3D"color: rgb(64,112,160);">4</span>
+<span class=3D"na" style=3D"color: rgb(64,112,160);">wsrep_sst_method</span=
+><span class=3D"o" style=3D"color: rgb(102,102,102);">=3D</span><span class=
+=3D"s" style=3D"color: rgb(64,112,160);">rsync</span>
+</pre>
+<p style=3D"text-align: justify;">There are several parameters here, but we=
+=E2=80=99ll talk about just a few of them. First,<span>&nbsp;</span><code c=
+lass=3D"docutils literal notranslate"><span class=3D"pre">wsrep_on</span></=
+code><span>&nbsp;</span>enables Galera. The file path for the value of<span=
+>&nbsp;</span><code class=3D"docutils literal notranslate"><span class=3D"p=
+re">wsrep_provider</span></code><span>&nbsp;</span>may have to be adjusted =
+to your server.</p>
+<p style=3D"text-align: justify;">The<span>&nbsp;</span><code class=3D"docu=
+tils literal notranslate"><span class=3D"pre">wsrep_node_name</span></code>=
+<span>&nbsp;</span>needs to be unique for each node (e.g.,<span>&nbsp;</spa=
+n><code class=3D"docutils literal notranslate"><span class=3D"pre">galera1<=
+/span></code>,<span>&nbsp;</span><code class=3D"docutils literal notranslat=
+e"><span class=3D"pre">galera2</span></code>, and<span>&nbsp;</span><code c=
+lass=3D"docutils literal notranslate"><span class=3D"pre">galera3</span></c=
+ode>). The<span>&nbsp;</span><code class=3D"docutils literal notranslate"><=
+span class=3D"pre">wsrep_node_address</span></code><span>&nbsp;</span>is th=
+e IP address for the node. For AWS, use the internal IP addresses, not the =
+external ones. You=E2=80=99ll have to adjust this for each node. Make sure =
+the<span>&nbsp;</span><code class=3D"docutils literal notranslate"><span cl=
+ass=3D"pre">wsrep_node_name</span></code><span>&nbsp;</span>and the<span>&n=
+bsp;</span><code class=3D"docutils literal notranslate"><span class=3D"pre"=
+>wsrep_node_address</span></code><span>&nbsp;</span>correspond to the names=
+ you gave for each node in AWS. It will make it easier later to shut down a=
+ node for maintenance.</p>
+<p style=3D"text-align: justify;">The<span>&nbsp;</span><code class=3D"docu=
+tils literal notranslate"><span class=3D"pre">wsrep_cluster_name</span></co=
+de><span>&nbsp;</span>is a name you=E2=80=99ll assign for the cluster. It h=
+as to be the same on all three nodes. The<span>&nbsp;</span><code class=3D"=
+docutils literal notranslate"><span class=3D"pre">wsrep_cluster_address</sp=
+an></code><span>&nbsp;</span>contains the IP addresses of all of the nodes =
+in the cluster, including the node on which it=E2=80=99s entered.</p>
+<p style=3D"text-align: justify;">That=E2=80=99s all that we need to do to =
+configure MariaDB and Galera. However, don=E2=80=99t start MariaDB, yet. Yo=
+u first need to configure security on each node and on AWS.</p>
+<p class=3D"section-heading list-sub-header rubric" style=3D"text-align: ju=
+stify;">Security Settings on Nodes</p>
+<p style=3D"text-align: justify;">Security is important, but it can be the =
+biggest obstacle for creating a new Galera Cluster. You have to open the li=
+nes of communications between the nodes. The two main factors will be SELin=
+ux and the firewall. You could disable both, but we recommend using them an=
+d enabling what you need.</p>
+<p style=3D"text-align: justify;">Galera Cluster uses a few TCP ports: 3306=
+ (MariaDB=E2=80=99s default), 4444, 4567, and 4568=E2=80=94and 4567 for UDP=
+. For SELinux, you will need to open these ports by executing the following=
+ from the command-line on each node:</p>
+<pre><span class=3D"go" style=3D"color: rgb(51,51,51);">semanage port -a -t=
+ mysqld_port_t -p tcp 3306</span>
+<span class=3D"go" style=3D"color: rgb(51,51,51);">semanage port -a -t mysq=
+ld_port_t -p tcp 4444</span>
+<span class=3D"go" style=3D"color: rgb(51,51,51);">semanage port -a -t mysq=
+ld_port_t -p tcp 4567</span>
+<span class=3D"go" style=3D"color: rgb(51,51,51);">semanage port -a -t mysq=
+ld_port_t -p udp 4567</span>
+<span class=3D"go" style=3D"color: rgb(51,51,51);">semanage port -a -t mysq=
+ld_port_t -p tcp 4568</span>
+<span class=3D"go" style=3D"color: rgb(51,51,51);">semanage permissive -a m=
+ysqld_t</span>
+</pre>
+<p style=3D"text-align: justify;">As for the firewall, you=E2=80=99ll have =
+to first enable and start it by entering the first two lines below. The six=
+ lines that follow those two will open the needed ports. The last line relo=
+ads the<span>&nbsp;</span><code class=3D"docutils literal notranslate"><spa=
+n class=3D"pre">firewalld</span></code><span>&nbsp;</span>daemon.</p>
+<pre><span class=3D"go" style=3D"color: rgb(51,51,51);">systemctl enable fi=
+rewalld</span>
+<span class=3D"go" style=3D"color: rgb(51,51,51);">systemctl start firewall=
+d</span>
+
+<span class=3D"go" style=3D"color: rgb(51,51,51);">firewall-cmd --zone=3Dpu=
+blic --add-service=3Dmysql --permanent</span>
+<span class=3D"go" style=3D"color: rgb(51,51,51);">firewall-cmd --zone=3Dpu=
+blic --add-port=3D3306/tcp --permanent</span>
+<span class=3D"go" style=3D"color: rgb(51,51,51);">firewall-cmd --zone=3Dpu=
+blic --add-port=3D4444/tcp --permanent</span>
+<span class=3D"go" style=3D"color: rgb(51,51,51);">firewall-cmd --zone=3Dpu=
+blic --add-port=3D4567/tcp --permanent</span>
+<span class=3D"go" style=3D"color: rgb(51,51,51);">firewall-cmd --zone=3Dpu=
+blic --add-port=3D4567/udp --permanent</span>
+<span class=3D"go" style=3D"color: rgb(51,51,51);">firewall-cmd --zone=3Dpu=
+blic --add-port=3D4568/tcp --permanent</span>
+<span class=3D"go" style=3D"color: rgb(51,51,51);">firewall-cmd --reload</s=
+pan>
+</pre>
+<p style=3D"text-align: justify;">After these lines have been executed on e=
+ach node, they=E2=80=99re now ready to interact with each other. You just n=
+eed to go back to AWS and add some entries to the security group you create=
+d earlier so that AWS would interfere.</p>
+<p class=3D"section-heading list-sub-header rubric" style=3D"text-align: ju=
+stify;">Security Settings on AWS</p>
+<p style=3D"text-align: justify;">From the AWS EC2 console, under<span>&nbs=
+p;</span><em>Security</em><span>&nbsp;</span>in the left margin, click on<s=
+pan>&nbsp;</span><em>Security Groups</em><span>&nbsp;</span>and then select=
+ the one you created for your Galera cluster. Under the<span>&nbsp;</span><=
+em>Actions</em><span>&nbsp;</span>pull-down menu, select<span>&nbsp;</span>=
+<em>Edit Inbound Rules</em>. This will open a large dialog box like the one=
+ in the screenshot below.</p>
+<p><a class=3D"external-link" href=3D"https://galeracluster.com/library/_im=
+ages/aws-galera-security-inbound-rules.png" style=3D"text-decoration: none;=
+" rel=3D"nofollow"><span class=3D"confluence-embedded-file-wrapper"><img cl=
+ass=3D"confluence-embedded-image tutorial-screenshot confluence-external-re=
+source" alt=3D"AWS Inbound Rules" src=3D"https://galeracluster.com/library/=
+_images/aws-galera-security-inbound-rules.png" data-image-src=3D"https://ga=
+leracluster.com/library/_images/aws-galera-security-inbound-rules.png"></sp=
+an></a></p>
+<p style=3D"text-align: justify;">For your first entry, click<span>&nbsp;</=
+span><em>Add Rule</em><span>&nbsp;</span>and select the type,<span>&nbsp;</=
+span><em>MySQL/Aurora</em><span>&nbsp;</span>and then enter the internal IP=
+ address for the first node (e.g.,<span>&nbsp;</span><code class=3D"docutil=
+s literal notranslate"><span class=3D"pre">172.31.19.208/32</span></code>).=
+ Add a description to keep your sanity (e.g.,<span>&nbsp;</span><em>Galera =
+- Node 1</em>). Next, add another rule, but this time select the type,<span=
+>&nbsp;</span><em>Custom TCP Rule</em>. Enter in the port field,<span>&nbsp=
+;</span><code class=3D"docutils literal notranslate"><span class=3D"pre">44=
+44</span></code>. Then enter the internal IP address and a description of t=
+he first node. Now add another custom TCP entry the same way, but for the p=
+ort, enter<span>&nbsp;</span><code class=3D"docutils literal notranslate"><=
+span class=3D"pre">4567</span><span>&nbsp;</span><span class=3D"pre">-</spa=
+n><span>&nbsp;</span><span class=3D"pre">4568</span></code>. Last, add a cu=
+stom UDP entry for port<span>&nbsp;</span><code class=3D"docutils literal n=
+otranslate"><span class=3D"pre">4567</span></code>.</p>
+<p style=3D"text-align: justify;">Repeat these four entries for each node, =
+adjusting the IP addresses and descriptions for each. When you=E2=80=99re f=
+inished, click on<span>&nbsp;</span><em>Save</em>.</p>
+<p style=3D"text-align: justify;">Now that you=E2=80=99ve authorized each G=
+alera node to communicate with the others on the required ports, you=E2=80=
+=99re ready to start Galera</p>
+<p class=3D"section-heading list-sub-header rubric" style=3D"text-align: ju=
+stify;">Starting Galera</p>
+<p style=3D"text-align: justify;">When first starting a new Galera cluster,=
+ you=E2=80=99ll have to start one node first. The problem is that if there =
+are no other nodes in the cluster, it will fail=E2=80=94unless you start Ma=
+riaDB on the first node telling it that it=E2=80=99s the first. To do this,=
+ you would use the<span>&nbsp;</span><code class=3D"docutils literal notran=
+slate"><span class=3D"pre">--wsrep-new-cluster</span></code><span>&nbsp;</s=
+pan>option.</p>
+<p style=3D"text-align: justify;">To make it easy, though, in version 4 of =
+Galera, you can use the<span>&nbsp;</span><code class=3D"docutils literal n=
+otranslate"><span class=3D"pre">galera_new_cluster</span></code><span>&nbsp=
+;</span>script. Just execute it from the command-line on the first node, on=
+ly. Incidentally, if you ever shut-down all nodes in the cluster and want t=
+o use<span>&nbsp;</span><code class=3D"docutils literal notranslate"><span =
+class=3D"pre">galera_new_cluster</span></code><span>&nbsp;</span>again, you=
+ may have to edit<span>&nbsp;</span><code class=3D"docutils literal notrans=
+late"><span class=3D"pre">/var/lib/mysql/grastate.dat</span></code><span>&n=
+bsp;</span>and change the<span>&nbsp;</span><code class=3D"docutils literal=
+ notranslate"><span class=3D"pre">safe_to_bootstrap</span></code><span>&nbs=
+p;</span>variable in that file from 0 to 1.</p>
+<p style=3D"text-align: justify;">Running<span>&nbsp;</span><code class=3D"=
+docutils literal notranslate"><span class=3D"pre">galera_new_cluster</span>=
+</code><span>&nbsp;</span>on the first node will start MariaDB and Galera, =
+but only on that one node. On the other nodes, execute the following from t=
+he command-line:</p>
+<pre><span class=3D"go" style=3D"color: rgb(51,51,51);">systemctl start mar=
+iadb</span>
+</pre>
+<p style=3D"text-align: justify;">Wait until the second node has started be=
+fore starting the third. It doesn=E2=80=99t matter, but it=E2=80=99s better=
+ to keep the clutter to a minimum when learning. Once MariaDB has started o=
+n each node, enter the first line below from the command-line on one of the=
+ nodes. Incidentally, there=E2=80=99s no password at this point, so just hi=
+t enter when asked.</p>
+<pre><span class=3D"go" style=3D"color: rgb(51,51,51);">mysql -p -u root -e=
+ "SHOW STATUS LIKE 'wsrep_cluster_size'"</span>
+
+<span class=3D"go" style=3D"color: rgb(51,51,51);">Enter password:</span>
+
+<span class=3D"go" style=3D"color: rgb(51,51,51);">+--------------------+--=
+-----+</span>
+<span class=3D"go" style=3D"color: rgb(51,51,51);">| Variable_name      | V=
+alue |</span>
+<span class=3D"go" style=3D"color: rgb(51,51,51);">+--------------------+--=
+-----+</span>
+<span class=3D"go" style=3D"color: rgb(51,51,51);">| wsrep_cluster_size | 3=
+     |</span>
+<span class=3D"go" style=3D"color: rgb(51,51,51);">+--------------------+--=
+-----+</span>
+</pre>
+<p style=3D"text-align: justify;">You can see from the results here that th=
+ere are three nodes in the cluster. That=E2=80=99s what we want. You=E2=80=
+=99ve successfully installed a Galera cluster using AWS instances. You can =
+start entering data and using the cluster.</p>
+<p style=3D"text-align: justify;">If you first want to play with the cluste=
+r a bit, log into all three nodes with the<span>&nbsp;</span><code class=3D=
+"docutils literal notranslate"><span class=3D"pre">mysql</span></code><span=
+>&nbsp;</span>client. Create a database on one node and check the other two=
+ nodes to see that it=E2=80=99s there. Then create a table on another node =
+and insert a row of data into that table on the third node. Then execute a<=
+span>&nbsp;</span><code class=3D"docutils literal notranslate"><span class=
+=3D"pre">SELECT</span></code><span>&nbsp;</span>statement on each node to s=
+ee that it=E2=80=99s replicating the data across the cluster.</p>
+    </div>
+</body>
+</html>
+------=_Part_3452_1682595068.1684351755572--

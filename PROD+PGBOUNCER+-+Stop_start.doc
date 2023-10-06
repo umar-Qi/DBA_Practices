@@ -1,0 +1,451 @@
+Message-ID: <1426564054.3447.1684351376073.JavaMail.confluence@ip-10-0-20-29>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_3446_559102330.1684351376073"
+
+------=_Part_3446_559102330.1684351376073
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>PROD PGBOUNCER - Stop/start</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>PROD PGBOUNCER - Stop/start</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+<table class=3D"confluenceTable">
+<tbody>
+<tr>
+<td colspan=3D"2" class=3D"confluenceTd"><h3 id=3D"PRODPGBOUNCER-Stop/start=
+-[DEVOPS-8874]PRODPGBOUNCER-Stop/startCreated:21/Apr/22Updated:23/Apr/22Res=
+olved:23/Apr/22">[DEVOPS-8874]&nbsp;<a href=3D"https://jira.carecloud.com/b=
+rowse/DEVOPS-8874" class=3D"external-link" rel=3D"nofollow">PROD PGBOUNCER =
+- Stop/start</a> Created: 21/Apr/22 &nbsp;Updated: 23/Apr/22 &nbsp;Resolved=
+: 23/Apr/22</h3></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Status:</strong></p></td>
+<td class=3D"confluenceTd"><p>Closed</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Project:</strong></p></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://jira.carecloud.com/secure/=
+BrowseProject.jspa?id=3D10010" class=3D"external-link" rel=3D"nofollow">Dev=
+Ops</a></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Component/s:</strong></p></td>
+<td class=3D"confluenceTd"><p>None</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Affects Version/s:</strong></p></td>
+<td class=3D"confluenceTd"><p>None</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Fix Version/s:</strong></p></td>
+<td class=3D"confluenceTd"><p>None</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table class=3D"confluenceTable">
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Type:</strong></p></td>
+<td class=3D"confluenceTd"><p>Normal Change Request</p></td>
+<td class=3D"confluenceTd"><p><strong>Priority:</strong></p></td>
+<td class=3D"confluenceTd"><p>Normal</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Reporter:</strong></p></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://jira.carecloud.com/secure/=
+ViewProfile.jspa?name=3Dmquinteros" class=3D"external-link" rel=3D"nofollow=
+">Manuel Quinteros</a></p></td>
+<td class=3D"confluenceTd"><p><strong>Assignee:</strong></p></td>
+<td class=3D"confluenceTd"><p><a href=3D"https://jira.carecloud.com/secure/=
+ViewProfile.jspa?name=3Dfscotta" class=3D"external-link" rel=3D"nofollow">F=
+acundo B. Scotta</a></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Resolution:</strong></p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+<td class=3D"confluenceTd"><p><strong>Votes:</strong></p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Labels:</strong></p></td>
+<td colspan=3D"3" class=3D"confluenceTd"><p>None</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Remaining Estimate:</strong></p></td>
+<td colspan=3D"3" class=3D"confluenceTd"><p>Not Specified</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Time Spent:</strong></p></td>
+<td colspan=3D"3" class=3D"confluenceTd"><p>Not Specified</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Original Estimate:</strong></p></td>
+<td colspan=3D"3" class=3D"confluenceTd"><p>Not Specified</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table class=3D"confluenceTable">
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Software Cap:</strong></p></td>
+<td class=3D"confluenceTd"><p>CapEx</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table class=3D"confluenceTable">
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p>&nbsp;<strong>Description</strong>&nbsp;</p><=
+/td>
+<td class=3D"confluenceTd"><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table class=3D"confluenceTable">
+<colgroup>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p>We need to stop/Start a prod pgbouncer in CD-=
+PROD AWS account that is hitting our master production DB and is being used=
+ by two screen green Resque hosts.</p><p>Scheduled for Saturday April 23rd =
+at 10:30 PM EST</p><p><strong>Validators</strong>: Carlos Fares</p><p><span=
+>PGBOUNCER Instance to be restarted:</span></p><p>CC-PROD-pgbouncer-00 -<sp=
+an>[i-0c93219a1594a7021]</span> - 10.50.12.197</p><p><span>Resque green hos=
+ts that use that pgbouncer, where the resque process needs to be restarted =
+after pgbouncer comes back up:</span></p><p>CC-PROD-webservices-22-green - =
+10.50.12.198<br>CC-PROD-webservices-batch-00-green - 10.50.11.241</p><p>+Ab=
+ove batch hosts env var that shows they point to that pgbouncer<br>+</p><p>=
+CONFIG_DATABASE_HOST=3D10.50.12.197</p><p><strong>Steps to perform:</strong=
+></p>
+<ul>
+<li>Go to AWS CD-PROD console and stop and start <strong>(not reboot)</stro=
+ng> the EC2 instance CC-PROD-pgbouncer-00 -<span>[i-0c93219a1594a7021]</spa=
+n> - 10.50.12.197</li>
+<li>Login to pgbouncer in CD-PROD - 10.50.12.197 after it came back up and =
+make sure the pgbouncer process is running (in this ec2 there's only one pr=
+ocess running)</li>
+</ul>
+<div class=3D"table-wrap">
+<table class=3D"confluenceTable">
+<tbody>
+<tr>
+<td class=3D"confluenceTd">root@cc-prod-pgbouncer-00:~# service pgbouncer s=
+tatus</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">&nbsp;* pgbouncer is running</td>
+</tr>
+</tbody>
+</table>
+</div><p>If it's not running, start it and make sure is running</p>
+<div class=3D"table-wrap">
+<table class=3D"confluenceTable">
+<tbody>
+<tr>
+<td class=3D"confluenceTd">service pgbouncer start</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">service pgbouncer status</td>
+</tr>
+</tbody>
+</table>
+</div><p>- Login to each batch hosts in green below, kill the workers, atta=
+ch to the screens and start them back <strong>(before 00:15 EST when the ni=
+ghtly job kicks off)</strong></p>
+<div class=3D"table-wrap">
+<table class=3D"confluenceTable">
+<tbody>
+<tr>
+<td class=3D"confluenceTd">CC-PROD-webservices-22-green - 10.50.12.198</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">CC-PROD-webservices-batch-00-green - 10.50.11.24=
+1</td>
+</tr>
+</tbody>
+</table>
+</div><p>To kill the processes that are running on a screen &nbsp;</p>
+<div class=3D"table-wrap">
+<table class=3D"confluenceTable">
+<tbody>
+<tr>
+<td class=3D"confluenceTd">ps -e -o pid,command | grep [r]esque | awk '{pri=
+nt $1}' | xargs kill -9</td>
+</tr>
+</tbody>
+</table>
+</div><p>As root check the screens that are running on each EC2</p>
+<div class=3D"table-wrap">
+<table class=3D"confluenceTable">
+<tbody>
+<tr>
+<td class=3D"confluenceTd">screen -ls</td>
+</tr>
+</tbody>
+</table>
+</div><p>Attach to each of the screens running on both</p>
+<div class=3D"table-wrap">
+<table class=3D"confluenceTable">
+<tbody>
+<tr>
+<td class=3D"confluenceTd">screen -r [screenID]</td>
+</tr>
+</tbody>
+</table>
+</div><p>Check doing "arrow up" on keyboard which is the latest config that=
+ was started on each screen, start it and give it a few minutes till you se=
+e the log it started.</p><p>Those resque instances need to be able to conne=
+ct properly to the pgbouncer to perform some read/write queries against the=
+ database and process a few resque jobs, that's why a resque restart is nee=
+ded, cause resque workers time out and stop working after pgbouncer is rest=
+arted.</p><p>Carlos Fares will need to validate in the master prod DB EC2, =
+that he sees incoming connections from the pgbouncer to the master DB, afte=
+r the restart.</p><p><br></p><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Generated at Sat May 21 12:10:26 EDT 2022 by 11900 - Rehman Kahloon usin=
+g Jira 8.21.0#821000-sha1:de61880939b2921ff7847fe221d818d723678af0.</p>
+    </div>
+</body>
+</html>
+------=_Part_3446_559102330.1684351376073--

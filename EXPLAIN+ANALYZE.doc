@@ -1,0 +1,317 @@
+Message-ID: <1851427142.3459.1684352349574.JavaMail.confluence@ip-10-0-20-29>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_3458_480513625.1684352349571"
+
+------=_Part_3458_480513625.1684352349571
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>EXPLAIN ANALYZE</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>EXPLAIN ANALYZE</h1>
+    <div class=3D"Section1">
+        <h2 style=3D"text-align: left;" id=3D"EXPLAINANALYZE-AQuickReviewof=
+ScanTypesandJoins"><strong>A Quick Review of Scan Types and Joins</strong><=
+/h2>
+<p style=3D"text-align: left;">It=E2=80=99s important to know that every jo=
+in type and scan type have their time and place. &nbsp;Some people look for=
+ the word =E2=80=9CSequential=E2=80=9D scan and immediately jump back in fe=
+ar, not considering whether it would be worthwhile to access data another. =
+&nbsp;Take, for example, a table with 2 rows -- it would not make sense to =
+the query planner to scan the index, then go back and retrieve data from th=
+e disk when it could just quickly scan the table and pull data out without =
+touching the index. &nbsp;In this case, and in the case of most other small=
+-ish tables, it would be more efficient to do a sequential scan. &nbsp;To q=
+uickly review the join and scan types that PostgreSQL works with:</p>
+<ul style=3D"text-align: left;">
+<li>Scan Types
+<ul>
+<li>Sequential Scan
+<ul>
+<li>Basically a brute-force retrieval from disk</li>
+<li>Scans the whole table</li>
+<li>Fast for small tables</li>
+</ul></li>
+<li>Index Scan
+<ul>
+<li>Scan all/some rows in an index; look up rows in heap</li>
+<li>Causes random seek, which can be costly for old-school spindle-based di=
+sks</li>
+<li>Faster than a Sequential Scan when extracting a small number of rows fo=
+r large tables</li>
+</ul></li>
+<li>Index Only Scan
+<ul>
+<li>Scan all/some rows in index</li>
+<li>No need to lookup rows in the table because the values we want are alre=
+ady stored in the index itself</li>
+</ul></li>
+<li>Bitmap Heap Scan
+<ul>
+<li>Scan index, building a bitmap of pages to visit</li>
+<li>Then, look up only relevant pages in the table for desired rows</li>
+</ul></li>
+</ul></li>
+<li>Join Types
+<ul>
+<li>Nested Loops
+<ul>
+<li>For each row in the outer table, scan for matching rows in the inner ta=
+ble</li>
+<li>Fast to start, best for small tables</li>
+</ul></li>
+<li>Merge Join
+<ul>
+<li>Zipper-operation on _sorted_ data sets</li>
+<li>Good for large tables</li>
+<li>High startup cost if an additional sort is required</li>
+</ul></li>
+<li>Hash Join
+<ul>
+<li>Build hash of inner table values, scan outer table for matches</li>
+<li>Only usable for equality conditions</li>
+<li>High startup cost, but fast execution</li>
+</ul></li>
+</ul></li>
+</ul>
+<p style=3D"text-align: left;">As we can see, every scan type and join type=
+ has its place. &nbsp;What=E2=80=99s most important is that the query plann=
+er has good statistics to work with, as mentioned earlier.</p>
+<p style=3D"text-align: left;">We=E2=80=99ve only talked about one instance=
+ where EXPLAIN helped identify a problem and give an idea of how to solve i=
+t.&nbsp; &nbsp;we=E2=80=99ve seen many situations where EXPLAIN could help =
+identify things like:</p>
+<ul style=3D"text-align: left;">
+<li>Inaccurate statistics leading to poor join/scan choices</li>
+<li>Maintenance activity (VACUUM and ANALYZE) not aggressive enough</li>
+<li>Corrupted indexes requiring a REINDEX</li>
+<li>Index definition v. query mismatch</li>
+<li>work_mem being set too low, preventing in-memory sorts and joins</li>
+<li>Poor performance due to join order listing when writing a query</li>
+<li>Improper ORM configuration</li>
+</ul>
+    </div>
+</body>
+</html>
+------=_Part_3458_480513625.1684352349571--

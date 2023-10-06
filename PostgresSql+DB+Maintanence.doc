@@ -1,0 +1,627 @@
+Message-ID: <472065314.3451.1684351541364.JavaMail.confluence@ip-10-0-20-29>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_3450_1467328937.1684351541364"
+
+------=_Part_3450_1467328937.1684351541364
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>PostgresSql DB Maintanence</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>PostgresSql DB Maintanence</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"PostgresSqlDBMaintanence-/*<![CDATA[*/div.rbtoc1684351541=
+318{padding:0px;}div.rbtoc1684351541318ul{list-style:disc;margin-left:0px;}=
+div.rbtoc1684351541318li{margin-left:0px;padding-left:0px;}/*]]>*/#Postgres=
+SqlDBMaintanence-SizeofWALGenerating#PostgresSql"><strong><style type=3D"te=
+xt/css">/*<![CDATA[*/
+div.rbtoc1684351541318 {padding: 0px;}
+div.rbtoc1684351541318 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1684351541318 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style>
+<div class=3D"toc-macro rbtoc1684351541318">=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#PostgresSqlDBMaintanence-"></a></li>=20
+<li><a href=3D"#PostgresSqlDBMaintanence-SizeofWALGenerating">Size of WAL G=
+enerating</a></li>=20
+<li><a href=3D"#PostgresSqlDBMaintanence-pg_stat_activity">pg_stat_activity=
+</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#PostgresSqlDBMaintanence-FindingQueryLock">Finding Query Lo=
+ck</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#PostgresSqlDBMaintanence-ObjectSizes">Object Sizes</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#PostgresSqlDBMaintanence-Top20Tables(DataSize)">Top 20 Tabl=
+es (Data Size)</a></li>=20
+<li><a href=3D"#PostgresSqlDBMaintanence-Top20Tables(TotalSize)">Top 20 Tab=
+les ( Total Size)</a></li>=20
+<li><a href=3D"#PostgresSqlDBMaintanence-Top20Tables(SeparateSizesData&amp;=
+IndexSize)">Top 20 Tables (Separate Sizes&nbsp; Data &amp; Index Size)</a><=
+/li>=20
+<li><a href=3D"#PostgresSqlDBMaintanence-Top25ObjectsbytotalDMLChanges">Top=
+ 25 Objects by total DML Changes</a></li>=20
+<li><a href=3D"#PostgresSqlDBMaintanence-FindingIndexDefinition">Finding In=
+dex Definition</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#PostgresSqlDBMaintanence-FindBloatedIndex">Find Bloated Ind=
+ex</a></li>=20
+<li><a href=3D"#PostgresSqlDBMaintanence-FindUnusedIndexes(NoSCAN)">Find Un=
+used Indexes (No SCAN)</a></li>=20
+<li><a href=3D"#PostgresSqlDBMaintanence-XIDAGEofallDatabases">XID AGE of a=
+ll Databases</a></li>=20
+<li><a href=3D"#PostgresSqlDBMaintanence-XIDageoftables(tobeexecutedwhileco=
+nnectedtoyourtargetdatabase):">XID age of tables (to be executed while conn=
+ected to your target database):</a></li>=20
+<li><a href=3D"#PostgresSqlDBMaintanence-AutovacuumStatistics">Autovacuum S=
+tatistics</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#PostgresSqlDBMaintanence-AutovacuumProcessProgress">Autovac=
+uum Process Progress</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#PostgresSqlDBMaintanence-Findingwhichlocksisoccuring">Findi=
+ng which locks is occuring</a></li>=20
+</ul>=20
+</div></strong></h2>
+<h2 id=3D"PostgresSqlDBMaintanence-SizeofWALGenerating"><strong>Size of WAL=
+ Generating</strong></h2>
+<pre class=3D"c-mrkdwn__pre">Size of WAL generated in last 50 minutes, just=
+ getting rough idea, several factors can impact WAL generation</pre>
+<pre class=3D"c-mrkdwn__pre">select pg_size_pretty(sum(size)) as "Volume of=
+ WAL generated in last 10 minutes" from pg_ls_waldir() where modification &=
+gt; (now() - interval '50 minutes') ;</pre>
+<h2 id=3D"PostgresSqlDBMaintanence-pg_stat_activity"><strong>pg_stat_activi=
+ty</strong></h2>
+<p><span>There are many different methods that can be used to monitor the d=
+atabase environments.</span></p>
+<p>Nagios alerts are in place, metrics reporting is available and current d=
+atabase load can be monitored using SQL.</p>
+<p>Logging into Postgres on the relevant server, the query below can be ran=
+ to give a brief rundown of what is happening at that time.</p>
+<p><strong>select procpid, client_addr, client_hostname, client_port, datna=
+me as database, query_start, now(), now()-query_start as run_time, current_=
+query</strong><br><strong>from pg_stat_activity</strong><br><strong>where c=
+urrent_query not like '%IDLE%'</strong><br><strong>order by run_time desc l=
+imit 200;</strong></p>
+<p><strong>select * from v_blockers2</strong><br><strong>--where pid =3D 12=
+480</strong><br><strong>;</strong></p>
+<p><strong>select procpid, client_addr, client_hostname, client_port, datna=
+me as database, query_start, now(), now()-query_start as run_time, current_=
+query</strong><br><strong>from pg_stat_activity</strong><br><strong>where p=
+rocpid =3D 15702;</strong></p>
+<p><strong>--select pg_terminate_backend(12143);</strong><br><strong>select=
+ * from v_blockers where blocker_pid not in (select pid from v_blockers);</=
+strong></p>
+<p><br></p>
+<p>The first query displays all current active processes hitting the databa=
+se, showing the source, query and how long it has been running.</p>
+<p>The second query calls a view of blocking processes. &nbsp;These are gen=
+erally exclusive locks that are preventing other processes from completing.=
+</p>
+<p>The third second is similar to the second, as you change the procpid id =
+listed with one that you want to investigate further.</p>
+<p>Using this information, you can log into the admin box, ssh as root to t=
+he IP shown in the query and run some tests.</p>
+<ul>
+<li>I usually run<span>&nbsp;</span><strong>netstat -anp | grep<span>&nbsp;=
+</span><em>&lt;port from the query&gt;</em></strong></li>
+<li>From that, we get the process id and then can do a simple<span>&nbsp;</=
+span><strong>ps ax | grep<span>&nbsp;</span><em>&lt;process id&gt;</em></st=
+rong><span>&nbsp;</span>to see what the process is and if it can be killed =
+or needs to be allowed to complete.</li>
+<li>In most cases these are resque jobs and need to be allowed to run; but =
+occasionally they get stuck and can be killed. &nbsp;David Salazar is a goo=
+d resource in asking if the process can be killed.</li>
+</ul>
+<p>The commented section of the main query is used for killing a process, j=
+ust change out the procpid accordingly.</p>
+<p>The last line is similar to the second; but it compares all blocking pro=
+cesses and serves up the data in such a way that you can see what the initi=
+al blocking process is.</p>
+<p>Usually, the oldest process is the one that will free up the rest once i=
+t is done.</p>
+<p><br></p>
+<p><strong>Heavy Load:</strong></p>
+<p>Occasionally we see a heavy load on the database servers and need to che=
+ck the current processes to determine if there is an issue.</p>
+<p>Sometimes this is due to a vacuum running on a large table. &nbsp;If pos=
+sible it is best to let the vacuum finish; but if the load is affecting per=
+formance of the overall system, then the vacuum process can be killed and t=
+he vacuum manually ran at a more convenient time.</p>
+<p>We currently run a series of vacuum and full vacuums as nightly processe=
+s on the larger high transaction tables.</p>
+<p>These run as cron tasks (on DB)on each Saturday after code freeze and ev=
+ery Sunday morning at approx. 1 am.</p>
+<h3 id=3D"PostgresSqlDBMaintanence-FindingQueryLock"><strong>Finding Query =
+Lock</strong></h3>
+<p>SELECT S.pid, age(clock_timestamp(), query_start), query, L.mode,L.lockt=
+ype,L.granted<br>FROM pg_stat_activity S<br>inner join pg_locks L on S.pid =
+=3D L.pid<br>order by L.granted, L.pid DESC;</p>
+<h2 id=3D"PostgresSqlDBMaintanence-ObjectSizes"><strong>Object Sizes</stron=
+g></h2>
+<h3 id=3D"PostgresSqlDBMaintanence-Top20Tables(DataSize)"><strong>Top 20 Ta=
+bles (Data Size)</strong></h3>
+<pre>SELECT nspname || '.' || relname AS "relation",
+    pg_size_pretty(pg_relation_size(C.oid)) AS "size"
+  FROM pg_class C
+  LEFT JOIN pg_namespace N ON (N.oid =3D C.relnamespace)
+  WHERE nspname NOT IN ('pg_catalog', 'information_schema')
+  ORDER BY pg_relation_size(C.oid) DESC
+  LIMIT 20;</pre>
+<h3 id=3D"PostgresSqlDBMaintanence-Top20Tables(TotalSize)">Top 20 Tables ( =
+Total Size)</h3>
+<p>SELECT nspname || '.' || relname AS "relation", pg_size_pretty(pg_total_=
+relation_size(C.oid)) AS "total_size" FROM pg_class C LEFT JOIN pg_namespac=
+e N ON (N.oid =3D C.relnamespace) WHERE nspname NOT IN ('pg_catalog', 'info=
+rmation_schema') AND C.relkind &lt;&gt; 'i' AND nspname !~ '^pg_toast' ORDE=
+R BY pg_total_relation_size(C.oid) DESC LIMIT 20;</p>
+<h3 id=3D"PostgresSqlDBMaintanence-Top20Tables(SeparateSizesData&amp;IndexS=
+ize)"><br><strong>Top 20 Tables (Separate Sizes&nbsp; Data &amp; Index Size=
+)</strong></h3>
+<p>select schemaname as table_schema,<br>relname as table_name,<br>pg_size_=
+pretty(pg_total_relation_size(relid)) as total_size,<br>pg_size_pretty(pg_r=
+elation_size(relid)) as data_size,<br>pg_size_pretty(pg_total_relation_size=
+(relid) - pg_relation_size(relid))<br>as external_size<br>from pg_catalog.p=
+g_statio_user_tables<br>order by pg_total_relation_size(relid) desc,<br>pg_=
+relation_size(relid) desc<br>limit 20;</p>
+<h3 id=3D"PostgresSqlDBMaintanence-Top25ObjectsbytotalDMLChanges">Top 25 Ob=
+jects by total DML Changes</h3>
+<p>select relname as "Table name",<br>n_tup_ins as "# Inserts",<br>n_tup_up=
+d as "# Updates",<br>n_tup_del as "# Deletes",<br>n_tup_hot_upd as "# Hot U=
+pdates",<br>(n_tup_ins + n_tup_upd + n_tup_del) as "Total changes",<br>n_li=
+ve_tup as "# Live tuples =3D # NUM ROWS",<br>n_dead_tup as "# Dead tuples",=
+<br>n_mod_since_analyze as "# Changes since last analyze",<br>vacuum_count =
+as "# Manual vacuum counts",<br>autovacuum_count as "# Auto vacuum counts"<=
+br>FROM pg_stat_all_tables <br>WHERE schemaname&nbsp;&nbsp;in ('public','cl=
+inic')&nbsp;<br>order by (n_tup_ins + n_tup_upd + n_tup_del) desc<br>limit =
+25;</p>
+<h3 id=3D"PostgresSqlDBMaintanence-FindingIndexDefinition">Finding Index De=
+finition</h3>
+<p>SELECT c2.relname as indexname, i.indisprimary, pg_catalog.pg_get_indexd=
+ef(i.indexrelid, 0, true) as indexdef, pg_catalog.pg_get_constraintdef(con.=
+oid, true), c.oid::regclass as tablename FROM pg_catalog.pg_class c, pg_cat=
+alog.pg_class c2, pg_catalog.pg_index i LEFT JOIN pg_catalog.pg_constraint =
+con ON (conrelid =3D i.indrelid AND conindid =3D i.indexrelid AND contype I=
+N ('p','u','x')) WHERE c.oid =3D 'PATIENTS'::regclass AND c.oid =3D i.indre=
+lid AND i.indexrelid =3D c2.oid;</p>
+<h2 id=3D"PostgresSqlDBMaintanence-FindBloatedIndex"><strong>Find Bloated I=
+ndex</strong></h2>
+<pre>SELECT
+  current_database(), schemaname, tablename, /*reltuples::bigint, relpages:=
+:bigint, otta,*/
+  ROUND(CASE WHEN otta=3D0 THEN 0.0 ELSE sml.relpages/otta::NUMERIC END,1) =
+AS tbloat,
+  pg_size_pretty(CASE WHEN relpages &lt; otta THEN 0 ELSE bs*(sml.relpages-=
+otta)::BIGINT END) AS wastedbytes,
+  iname, /*ituples::bigint, ipages::bigint, iotta,*/
+  ROUND(CASE WHEN iotta=3D0 OR ipages=3D0 THEN 0.0 ELSE ipages/iotta::NUMER=
+IC END,1) AS ibloat,
+  CASE WHEN ipages &lt; iotta THEN 0 ELSE bs*(ipages-iotta) END AS wastedib=
+ytes
+FROM (
+  SELECT
+    schemaname, tablename, cc.reltuples, cc.relpages, bs,
+    CEIL((cc.reltuples*((datahdr+ma-
+      (CASE WHEN datahdr%ma=3D0 THEN ma ELSE datahdr%ma END))+nullhdr2+4))/=
+(bs-20::FLOAT)) AS otta,
+    COALESCE(c2.relname,'?') AS iname, COALESCE(c2.reltuples,0) AS ituples,=
+ COALESCE(c2.relpages,0) AS ipages,
+    COALESCE(CEIL((c2.reltuples*(datahdr-12))/(bs-20::FLOAT)),0) AS iotta -=
+- very rough approximation, assumes all cols
+  FROM (
+    SELECT
+      ma,bs,schemaname,tablename,
+      (datawidth+(hdr+ma-(CASE WHEN hdr%ma=3D0 THEN ma ELSE hdr%ma END)))::=
+NUMERIC AS datahdr,
+      (maxfracsum*(nullhdr+ma-(CASE WHEN nullhdr%ma=3D0 THEN ma ELSE nullhd=
+r%ma END))) AS nullhdr2
+    FROM (
+      SELECT
+        schemaname, tablename, hdr, ma, bs,
+        SUM((1-null_frac)*avg_width) AS datawidth,
+        MAX(null_frac) AS maxfracsum,
+        hdr+(
+          SELECT 1+COUNT(*)/8
+          FROM pg_stats s2
+          WHERE null_frac&lt;&gt;0 AND s2.schemaname =3D s.schemaname AND s=
+2.tablename =3D s.tablename
+        ) AS nullhdr
+      FROM pg_stats s, (
+        SELECT
+          (SELECT current_setting('block_size')::NUMERIC) AS bs,
+          CASE WHEN SUBSTRING(v,12,3) IN ('8.0','8.1','8.2') THEN 27 ELSE 2=
+3 END AS hdr,
+          CASE WHEN v ~ 'mingw32' THEN 8 ELSE 4 END AS ma
+        FROM (SELECT version() AS v) AS foo
+      ) AS constants
+      GROUP BY 1,2,3,4,5
+    ) AS foo
+  ) AS rs
+  JOIN pg_class cc ON cc.relname =3D rs.tablename
+  JOIN pg_namespace nn ON cc.relnamespace =3D nn.oid AND nn.nspname =3D rs.=
+schemaname AND nn.nspname &lt;&gt; 'information_schema'
+  LEFT JOIN pg_index i ON indrelid =3D cc.oid
+  LEFT JOIN pg_class c2 ON c2.oid =3D i.indexrelid
+) AS sml
+ORDER BY=20
+CASE WHEN relpages &lt; otta THEN 0 ELSE bs*(sml.relpages-otta)::BIGINT END=
+ DESC</pre>
+<p><br><br></p>
+<h2 id=3D"PostgresSqlDBMaintanence-FindUnusedIndexes(NoSCAN)"><strong>Find =
+Unused Indexes (No SCAN)</strong></h2>
+<pre>WITH table_scans as (
+    SELECT relid,
+        tables.idx_scan + tables.seq_scan as all_scans,
+        ( tables.n_tup_ins + tables.n_tup_upd + tables.n_tup_del ) as write=
+s,
+                pg_relation_size(relid) as table_size
+        FROM pg_stat_user_tables as tables
+),</pre>
+<pre>WITH table_scans as (
+    SELECT relid,
+        tables.idx_scan + tables.seq_scan as all_scans,
+        ( tables.n_tup_ins + tables.n_tup_upd + tables.n_tup_del ) as write=
+s,
+                pg_relation_size(relid) as table_size
+        FROM pg_stat_user_tables as tables
+),
+all_writes as (
+    SELECT sum(writes) as total_writes
+    FROM table_scans
+),
+indexes as (
+    SELECT idx_stat.relid, idx_stat.indexrelid,
+        idx_stat.schemaname, idx_stat.relname as tablename,
+        idx_stat.indexrelname as indexname,
+        idx_stat.idx_scan,
+        pg_relation_size(idx_stat.indexrelid) as index_bytes,
+        indexdef ~* 'USING btree' AS idx_is_btree
+    FROM pg_stat_user_indexes as idx_stat
+        JOIN pg_index
+            USING (indexrelid)
+        JOIN pg_indexes as indexes
+            ON idx_stat.schemaname =3D indexes.schemaname
+                AND idx_stat.relname =3D indexes.tablename
+                AND idx_stat.indexrelname =3D indexes.indexname
+    WHERE pg_index.indisunique =3D FALSE
+),
+index_ratios AS (
+SELECT schemaname, tablename, indexname,
+    idx_scan, all_scans,
+    round(( CASE WHEN all_scans =3D 0 THEN 0.0::NUMERIC
+        ELSE idx_scan::NUMERIC/all_scans * 100 END),2) as index_scan_pct,
+    writes,
+    round((CASE WHEN writes =3D 0 THEN idx_scan::NUMERIC ELSE idx_scan::NUM=
+ERIC/writes END),2)
+        as scans_per_write,
+    pg_size_pretty(index_bytes) as index_size,
+    pg_size_pretty(table_size) as table_size,
+    idx_is_btree, index_bytes
+    FROM indexes
+    JOIN table_scans
+    USING (relid)
+),
+index_groups AS (
+SELECT 'Never Used Indexes' as reason, *, 1 as grp
+FROM index_ratios
+WHERE
+    idx_scan =3D 0
+    and idx_is_btree
+UNION ALL
+SELECT 'Low Scans, High Writes' as reason, *, 2 as grp
+FROM index_ratios
+WHERE
+    scans_per_write &lt;=3D 1
+    and index_scan_pct &lt; 10
+    and idx_scan &gt; 0
+    and writes &gt; 100
+    and idx_is_btree
+UNION ALL
+SELECT 'Seldom Used Large Indexes' as reason, *, 3 as grp
+FROM index_ratios
+WHERE
+    index_scan_pct &lt; 5
+    and scans_per_write &gt; 1
+    and idx_scan &gt; 0
+    and idx_is_btree
+    and index_bytes &gt; 100000000
+UNION ALL
+SELECT 'High-Write Large Non-Btree' as reason, index_ratios.*, 4 as grp=20
+FROM index_ratios, all_writes
+WHERE
+    ( writes::NUMERIC / ( total_writes + 1 ) ) &gt; 0.02
+    AND NOT idx_is_btree
+    AND index_bytes &gt; 100000000
+ORDER BY grp, index_bytes DESC )
+SELECT reason, schemaname, tablename, indexname,
+    index_scan_pct, scans_per_write, index_size, table_size
+FROM index_groups;<br><br><br></pre>
+<h2 id=3D"PostgresSqlDBMaintanence-XIDAGEofallDatabases"><strong>XID AGE of=
+ all Databases</strong></h2>
+<p><strong><a href=3D"https://www.cse.iitb.ac.in/infolab/cep/downloads/pgad=
+min3/pgadmin3-1.4.3/docs/en_US/pg/maintenance.html" class=3D"external-link"=
+ rel=3D"nofollow">https://www.cse.iitb.ac.in/infolab/cep/downloads/pgadmin3=
+/pgadmin3-1.4.3/docs/en_US/pg/maintenance.html</a></strong></p>
+<p>SELECT datname<br>, age(datfrozenxid)<br>, current_setting('autovacuum_f=
+reeze_max_age') <br>FROM pg_database <br>ORDER BY 2 DESC;</p>
+<pre><br></pre>
+<h2 id=3D"PostgresSqlDBMaintanence-XIDageoftables(tobeexecutedwhileconnecte=
+dtoyourtargetdatabase):"><strong>XID age of tables (to be executed while co=
+nnected to your target database):</strong></h2>
+<p>select n.nspname as schema, c.relname as table, age(c.relfrozenxid) as x=
+id_age, pg_size_pretty(pg_table_size(c.oid)) as table_size <br>FROM pg_clas=
+s c, pg_namespace n where n.oid =3D c.relnamespace <br>and c.relkind in ('r=
+','m','t') <br>ORDER BY age(c.relfrozenxid) DESC LIMIT 100;</p>
+<h2 id=3D"PostgresSqlDBMaintanence-AutovacuumStatistics"><strong>Autovacuum=
+ Statistics</strong></h2>
+<p>SELECT schemaname,<br>relname,<br>last_autovacuum,<br>last_autoanalyze,<=
+br>autovacuum_count,<br>autoanalyze_count,<br>autovacuum_count+autoanalyze_=
+count AS tot<br>FROM pg_stat_user_tables<br>ORDER BY 7 DESC<br>LIMIT 20;</p=
+>
+<h3 id=3D"PostgresSqlDBMaintanence-AutovacuumProcessProgress">Autovacuum Pr=
+ocess Progress</h3>
+<p>SELECT p.pid,<br>now() - a.xact_start AS duration,<br>coalesce(wait_even=
+t_type ||'.'|| wait_event, 'f') AS waiting,<br>CASE<br>WHEN a.query ~*'^aut=
+ovacuum.*to prevent wraparound' THEN 'wraparound'<br>WHEN a.query ~*'^vacuu=
+m' THEN 'user'<br>ELSE 'regular'<br>END AS MODE,<br>p.datname AS DATABASE,<=
+br>p.relid::regclass AS TABLE,<br>p.phase,<br>pg_size_pretty(p.heap_blks_to=
+tal * current_setting('block_size')::int) AS table_size,<br>pg_size_pretty(=
+pg_total_relation_size(relid)) AS total_size,<br>pg_size_pretty(p.heap_blks=
+_scanned * current_setting('block_size')::int) AS scanned,<br>pg_size_prett=
+y(p.heap_blks_vacuumed * current_setting('block_size')::int) AS vacuumed,<b=
+r>round(100.0 * p.heap_blks_scanned / p.heap_blks_total, 1) AS scanned_pct,=
+<br>round(100.0 * p.heap_blks_vacuumed / p.heap_blks_total, 1) AS vacuumed_=
+pct,<br>p.index_vacuum_count,<br>round(100.0 * p.num_dead_tuples / p.max_de=
+ad_tuples,1) AS dead_pct<br>FROM pg_stat_progress_vacuum p<br>JOIN pg_stat_=
+activity a USING (pid)<br>ORDER BY now() - a.xact_start DESC<br>;</p>
+<p><br></p>
+<h2 id=3D"PostgresSqlDBMaintanence-Findingwhichlocksisoccuring"><strong>Fin=
+ding which locks is occuring</strong></h2>
+<p>WITH T AS<br>(SELECT db.datname dbname,<br>lower(replace(Q.mode, 'Lock',=
+ '')) AS MODE,<br>coalesce(T.qty, 0) val<br>FROM pg_database db<br>JOIN (<b=
+r>VALUES ('AccessShareLock') ,('RowShareLock') ,('RowExclusiveLock') ,('Sha=
+reUpdateExclusiveLock') ,('ShareLock') ,('ShareRowExclusiveLock') ,('Exclus=
+iveLock') ,('AccessExclusiveLock')) Q(MODE) ON TRUE NATURAL<br>LEFT JOIN<br=
+>(SELECT datname,<br>MODE,<br>count(MODE) qty<br>FROM pg_locks lc<br>RIGHT =
+JOIN pg_database db ON db.oid =3D lc.database<br>GROUP BY 1, 2) T<br>WHERE =
+NOT db.datistemplate<br>ORDER BY 1, 2)<br>SELECT json_object_agg(dbname, ro=
+w_to_json(T2))<br>FROM<br>(SELECT dbname,<br>sum(val) AS total,<br>sum(CASE=
+<br>WHEN MODE =3D 'accessexclusive' THEN val<br>END) AS accessexclusive,<br=
+>sum(CASE<br>WHEN MODE =3D 'accessshare' THEN val<br>END) AS accessshare,<b=
+r>sum(CASE<br>WHEN MODE =3D 'exclusive' THEN val<br>END) AS EXCLUSIVE,<br>s=
+um(CASE<br>WHEN MODE =3D 'rowexclusive' THEN val<br>END) AS rowexclusive,<b=
+r>sum(CASE<br>WHEN MODE =3D 'rowshare' THEN val<br>END) AS rowshare,<br>sum=
+(CASE<br>WHEN MODE =3D 'share' THEN val<br>END) AS SHARE,<br>sum(CASE<br>WH=
+EN MODE =3D 'sharerowexclusive' THEN val<br>END) AS sharerowexclusive,<br>s=
+um(CASE<br>WHEN MODE =3D 'shareupdateexclusive' THEN val<br>END) AS shareup=
+dateexclusive<br>FROM T<br>GROUP BY dbname) T2</p>
+<p><br></p>
+<p><br></p>
+<pre><br><br><br></pre>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_3450_1467328937.1684351541364--

@@ -1,0 +1,366 @@
+Message-ID: <1109632950.3455.1684351933060.JavaMail.confluence@ip-10-0-20-29>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_3454_406036160.1684351933058"
+
+------=_Part_3454_406036160.1684351933058
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Adding New Replica in Production Environment</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Adding New Replica in Production Environment</h1>
+    <div class=3D"Section1">
+        <p><br>BUILDING HOST[E]&nbsp;<br>SETUP POSTGRES REPOSITORY&nbsp;<br=
+>INSTALL PACKAGES&nbsp;<br>DROP PG12 DATACLUSTER<br>PREPARE PG12 DATACLUSTE=
+R<br>UPDATE POSTGRES UID<br>EXECUTE BASEBACKUP<br>CHECK FOR SSL SERVER CERT=
+IFICATES<br>SETUP CONFIGURATION FILES<br>START SERVER<br>MONITORING RECOVER=
+Y OF NEW REPLICA<br><br></p>
+<h1 id=3D"AddingNewReplicainProductionEnvironment-BUILDINGHOST[E]">BUILDING=
+ HOST[E]</h1>
+<p><br>hostA: 10.50.11.144&nbsp; Adding New Re&nbsp; &nbsp; &nbsp;10.50.11.=
+226<br>hostB: 10.50.11.169&nbsp; &nbsp;Dopped from Cluster list<br>hostC: 1=
+0.50.11.253<br>hostD: 10.50.11.226<br>hostE: 10.55.0.181&nbsp;</p>
+<p>10:55:0:85&nbsp; &nbsp;Adding</p>
+<p><br></p>
+<h1 id=3D"AddingNewReplicainProductionEnvironment-SETUPPOSTGRESREPOSITORY">=
+SETUP POSTGRES REPOSITORY</h1>
+<p>The following instructions are executed in a "screen" session. In this c=
+ase, two windows are used i.e. sudo root, sudo postgres</p>
+<h1 id=3D"AddingNewReplicainProductionEnvironment-INSTALLPACKAGES">INSTALL =
+PACKAGES</h1>
+<p>DROP PG12 DATACLUSTER<br><br># as root<br># determine linux distribution=
+ (assumes Ubuntu)<br># reference: <a href=3D"https://www.postgresql.org/dow=
+nload/linux/ubuntu/" class=3D"external-link" rel=3D"nofollow">https://www.p=
+ostgresql.org/download/linux/ubuntu/</a><br>#</p>
+<p>lsb_release -a<br>echo "deb <a href=3D"http://apt.postgresql.org/pub/rep=
+os/apt" class=3D"external-link" rel=3D"nofollow">http://apt.postgresql.org/=
+pub/repos/apt</a> $(lsb_release -cs) -pgdg main" &gt;&nbsp; /etc/apt/source=
+s.list.d/pgdg.list<br>wget --quiet -O - <a href=3D"https://www.postgresql.o=
+rg/media/keys/ACCC4CF8.asc" class=3D"external-link" rel=3D"nofollow">https:=
+//www.postgresql.org/media/keys/ACCC4CF8.asc</a> | sudo apt-key add -<br>ap=
+t-get update<br>#<br># as root<br>#<br>apt -y install postgresql-12-pgfinco=
+re postgresql-12-repack<br>pg_lsclusters<br>#<br># as root<br>#<br>pg_dropc=
+luster 12 main --stop<br>pg_lsclusters</p>
+<h1 id=3D"AddingNewReplicainProductionEnvironment-PREPAREPG12DATACLUSTER">P=
+REPARE PG12 DATACLUSTER</h1>
+<h1 id=3D"AddingNewReplicainProductionEnvironment-UPDATEPOSTGRESUID"><br>UP=
+DATE POSTGRES UID</h1>
+<p><br>This is a kludge for handling nfs permission discrepancies</p>
+<p>EXECUTE BASEBACKUP<br><br># as root<br>#<br>pg_createcluster 12 CareClou=
+d -d /data/pgsql12<br>pg_lsclusters<br>rm -r /data/pgsql12/*<br>find /data/=
+pgsql12<br>#<br># as postgres<br>#<br>usermod -u 333 postgres<br># confirm<=
+br>id -u postgres<br>#<br># as root, update the existing directory ownershi=
+ps<br>#<br>chown -R postgres.postgres&nbsp; /etc/postgresql&nbsp; &nbsp;/da=
+ta/pgsql12&nbsp; &nbsp;/var/lib/postgresql&nbsp; &nbsp; &nbsp; &nbsp; /var/=
+run/postgresql<br>#<br># as postgres<br>#<br>export PGPASSWORD=3D&lt;MYPASS=
+WORD&gt;<br>cd ~<br>/usr/lib/postgresql/12/bin/pg_basebackup&nbsp; -D /data=
+/pgsql12&nbsp; -P -X stream -c fast -l baseBackup_hostE&nbsp; &nbsp;-h 10.5=
+0.11.144&nbsp; -U ruser</p>
+<p><br></p>
+<h1 id=3D"AddingNewReplicainProductionEnvironment-CHECKFORSSLSERVERCERTIFIC=
+ATES">CHECK FOR SSL SERVER CERTIFICATES</h1>
+<h1 id=3D"AddingNewReplicainProductionEnvironment-SETUPCONFIGURATIONFILES">=
+SETUP CONFIGURATION FILES</h1>
+<p>These files are understood to have been previously copied from one of th=
+e other active hosts.</p>
+<p>START SERVER</p>
+<p>ATTENTION :<br>=E2=97=8F Because of the large number of WALS present in =
+"/wal_archive/pgsql12" the postgres server may incorrectly read the wrong h=
+istory file from another previous set of activities.<br>=E2=97=8F For examp=
+le, when starting hostE the server reads the timeline as "2" from the still=
+ present Postgres version 9.1 history. In this case, the server won=E2=80=
+=99t start.</p>
+<p><br><br># as postgres<br>#<br>ls -al /data/pgsql12<br>#<br># as postgres=
+<br>#</p>
+<h1 id=3D"AddingNewReplicainProductionEnvironment-CONFIGURATIONFILES/ETC">C=
+ONFIGURATION FILES /ETC</h1>
+<p>cd /wal_archive/prepared_configs/<br>cp pg_hba.conf /etc/postgresql/12/C=
+areCloud/pg_hba.conf<br>cp postgresql.conf-12 /etc/postgresql/12/CareCloud/=
+postgresql.conf</p>
+<p># DATACLUSTER<br>cp postgresql.auto.conf-12 /data/pgsql12/postgresql.aut=
+o.conf<br>touch /data/pgsql12/standby.signal<br>#<br># as root<br>#<br>pg_l=
+sclusters<br>systemctl start postgresql@12-CareCloud<br>pg_lsclusters<br>=
+=E2=97=8F The issue is corrected by explicitly editing the hostE configurat=
+ion file, /data/pgsql12/postgresql.auto.conf with the following update in o=
+rder to read the correct timeline which in this particular case is "1":<br>=
+=E2=97=8F In this case, future failovers require updating the timeline agai=
+n in order to read WALs created from any newly promoted PRIMARY i.e. recove=
+ry_target_timeline =3D '2'</p>
+<h4 id=3D"AddingNewReplicainProductionEnvironment-MONITORINGRECOVERYOFNEWRE=
+PLICA#recovery_target_timeline=3D'latest'recovery_target_timeline=3D'1'##ME=
+THOD1:runtopontheREPLICA#confirmWALSarebeingingested#top-Upostgres##METHOD2=
+:tailpostgreslogsontheREPLICA#confirmWALSare">MONITORING RECOVERY OF NEW RE=
+PLICA<br><br>#recovery_target_timeline =3D 'latest'<br>recovery_target_time=
+line =3D '1'<br>#<br># METHOD 1: run top on the REPLICA<br># confirm WALS a=
+re being ingested<br>#<br>top -U postgres<br>#<br># METHOD 2: tail postgres=
+ logs on the REPLICA<br># confirm WALS are being ingested<br># note to sele=
+ct the current day log<br>#<br>tail -f /logs/pgsql12/&lt;postgresql-day- ##=
+.log&gt;<br>#<br># METHOD 3: execute these on the PRIMARY<br># confirm stre=
+aming replication is active<br>#<br>psql -h localhost -U postgres CareCloud=
+_Prod -c 'select * from pg_stat_replication'<br><br></h4>
+<p>pid | usesysid | usename | application_name | client_addr | client_hostn=
+ame | client_port |&nbsp; &nbsp; backend_start&nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| backend_xmin | stat=
+e |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sent_lsn |&nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; write_lsn |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp;flush_lsn |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;repl=
+ay_lsn |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; write_lag |&nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp;flush_lag |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp;replay_lag | sync_priority | sync_state | reply_time <br>-------=
++----------+---------+------------------+--------------+-----------------+-=
+------------+-------------------------------+--------------+-----------+---=
+------------+---------------+---------------+---------------+--------------=
+---+-----------------+-----------------+---------------+------------+------=
+-------------------------<br>60844 | 2053828 | ruser | 12/CareCloud | 10.50=
+.11.253 |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | 56358&nbsp; &=
+nbsp; | 2020-11-14 21:25:09.077787-05 | 3242776483 | streaming | C6D9/C61EE=
+000 | C6D9/C61EE000 | C6D9/C61EE000 | C6D9/C61EDFE0 | 00:00:00.002886 | 00:=
+00:00.004719 | 00:00:00.014427 | 0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; | async | 2021-03-29 08:34:34.649778-04<br>60905 | 2053828 | ruser =
+| 12/CareCloud | 10.50.11.169 |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp;| 57078&nbsp; &nbsp;| 2020-11-14 21:25:28.368304-05 | 32428349=
+63 | streaming | C6D9/C61EE000 | C6D9/C61EE000 | C6D9/C61EE000 | C6D9/C61ED=
+FE0 | 00:00:00.002936 | 00:00:00.004924 | 00:00:00.012127 | 0&nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; async | 2021-03-29 08:34:34.64860=
+3-04<br>71274 | 2053828 | ruser | 12/CareCloud | 10.55.0.181 |&nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| 35388&nbsp; &nbsp;| 20=
+21-03-17 19:39:05.799459-04 | 3242834963 | streaming | C6D9/C61EE000 | C6D9=
+/C61EE000 | C6D9/C61EE000 | C6D9/C61EDFE0 | 00:00:00.050017 | 00:00:00.0507=
+01 | 00:00:00.053791 | 0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| a=
+sync | 2021-03-29 08:34:34.685552-04<br>15882 | 2053828 | ruser | 12/CareCl=
+oud | 10.55.0.85 |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp;| 48020&nbsp; &nbsp;| 2021-03-29 08:05:20.658935-04 | 3242834=
+963 | streaming | C6D9/C61EE000 | C6D9/C61EE000 | C6D9/C61EE000 | C6D9/C61E=
+DFE0 | 00:00:00.047987 | 00:00:00.049665 | 00:00:00.053821 | 0&nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | async | 2021-03-29 08:34:34.683881-04=
+</p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_3454_406036160.1684351933058--

@@ -1,0 +1,570 @@
+Message-ID: <1285178535.3457.1684352065766.JavaMail.confluence@ip-10-0-20-29>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_3456_432700398.1684352065764"
+
+------=_Part_3456_432700398.1684352065764
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Migrate an on-premises MariaDB database to Amazon RDS for MariaD=
+B using native MySQL tools</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Migrate an on-premises MariaDB database to Amazon RDS for MariaDB u=
+sing native MySQL tools</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p><strong>R Type:<span>&nbsp;</span></strong>Re=
+platform</p></td>
+<td class=3D"confluenceTd"><p><strong>Source:<span>&nbsp;</span></strong>Da=
+tabases: Relational</p></td>
+<td class=3D"confluenceTd"><p><strong>Target:<span>&nbsp;</span></strong>Am=
+azon RDS for MariaDB</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Created by:<span>&nbsp;</span></stron=
+g>AWS</p></td>
+<td class=3D"confluenceTd"><p><strong>Environment:<span>&nbsp;</span></stro=
+ng>PoC or pilot</p></td>
+<td class=3D"confluenceTd"><p><strong>Technologies:<span>&nbsp;</span></str=
+ong>Databases; Migration</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Workload:<span>&nbsp;</span></strong>=
+Open-source</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id=3D"Migrateanon-premisesMariaDBdatabasetoAmazonRDSforMariaDBusingnati=
+veMySQLtools-Summary">Summary</h1>
+<p>This pattern provides guidance for migrating an on-premises MariaDB data=
+base to Amazon Relational Database Service (Amazon RDS) for MariaDB using n=
+ative MySQL tools such as<span>&nbsp;</span><strong>mysqldump</strong><span=
+>&nbsp;</span>and<span>&nbsp;</span><strong>mysql</strong>.</p>
+<h2 style=3D"text-decoration: none;" id=3D"Migrateanon-premisesMariaDBdatab=
+asetoAmazonRDSforMariaDBusingnativeMySQLtools-Prerequisitesandlimitations">=
+<strong>Prerequisites and limitations</strong></h2>
+<h3 id=3D"Migrateanon-premisesMariaDBdatabasetoAmazonRDSforMariaDBusingnati=
+veMySQLtools-Prerequisites"><strong>Prerequisites</strong></h3>
+<ul class=3D"itemizedlist">
+<li class=3D"listitem"><p>An active AWS account</p></li>
+<li class=3D"listitem"><p>A MariaDB source database in an on-premises data =
+center</p></li>
+</ul>
+<h3 id=3D"Migrateanon-premisesMariaDBdatabasetoAmazonRDSforMariaDBusingnati=
+veMySQLtools-Limitations"><strong>Limitations</strong></h3>
+<ul class=3D"itemizedlist">
+<li class=3D"listitem"><p>Database size limit: 64 TB</p></li>
+</ul>
+<p><br></p>
+<h2 id=3D"Migrateanon-premisesMariaDBdatabasetoAmazonRDSforMariaDBusingnati=
+veMySQLtools-Productversions"><strong>Product versions</strong></h2>
+<ul class=3D"itemizedlist">
+<li class=3D"listitem"><p>MariaDB versions 10.0-10.3 (for the latest list o=
+f supported versions, see&nbsp;<a href=3D"https://docs.aws.amazon.com/Amazo=
+nRDS/latest/UserGuide/CHAP_MariaDB.html#MariaDB.Concepts.VersionMgmt" style=
+=3D"text-decoration: none;" class=3D"external-link" rel=3D"nofollow">MariaD=
+B on Amazon RDS</a>&nbsp;in the AWS documentation)</p></li>
+</ul>
+<h2 id=3D"Migrateanon-premisesMariaDBdatabasetoAmazonRDSforMariaDBusingnati=
+veMySQLtools-Architecture"><strong>Architecture</strong></h2>
+<h3 id=3D"Migrateanon-premisesMariaDBdatabasetoAmazonRDSforMariaDBusingnati=
+veMySQLtools-Sourcetechnologystack"><strong>Source technology stack</strong=
+></h3>
+<ul class=3D"itemizedlist">
+<li class=3D"listitem"><p>MariaDB database in an on-premises data center</p=
+></li>
+</ul>
+<p><br></p>
+<h3 id=3D"Migrateanon-premisesMariaDBdatabasetoAmazonRDSforMariaDBusingnati=
+veMySQLtools-Targettechnologystack"><strong>Target technology stack</strong=
+></h3>
+<ul class=3D"itemizedlist">
+<li class=3D"listitem"><p>Amazon RDS for MariaDB DB instance</p></li>
+</ul>
+<h2 id=3D"Migrateanon-premisesMariaDBdatabasetoAmazonRDSforMariaDBusingnati=
+veMySQLtools-Targetarchitecture"><strong>Target architecture</strong></h2>
+<p><span class=3D"confluence-embedded-file-wrapper confluence-embedded-manu=
+al-size"><img class=3D"confluence-embedded-image confluence-external-resour=
+ce" width=3D"1000" src=3D"https://docs.aws.amazon.com/prescriptive-guidance=
+/latest/patterns/images/pattern-img/7be644e0-da42-4515-87b7-04da7a054adb/im=
+ages/eca8eb55-579a-42e2-96ce-9b14b097b4c9.png" data-image-src=3D"https://do=
+cs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/=
+7be644e0-da42-4515-87b7-04da7a054adb/images/eca8eb55-579a-42e2-96ce-9b14b09=
+7b4c9.png"></span></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"Migrateanon-premisesMariaDBdatabasetoAmazonRDSforMariaDBusingnati=
+veMySQLtools-Datamigrationarchitecture"><strong>Data migration architecture=
+</strong></h2>
+<p><br></p>
+<p><span class=3D"confluence-embedded-file-wrapper confluence-embedded-manu=
+al-size"><img class=3D"confluence-embedded-image confluence-external-resour=
+ce" width=3D"1007" src=3D"https://docs.aws.amazon.com/prescriptive-guidance=
+/latest/patterns/images/pattern-img/7be644e0-da42-4515-87b7-04da7a054adb/im=
+ages/daba40e2-a2b1-44f8-8e69-31458206a823.png" data-image-src=3D"https://do=
+cs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/=
+7be644e0-da42-4515-87b7-04da7a054adb/images/daba40e2-a2b1-44f8-8e69-3145820=
+6a823.png"></span></p>
+<h2 id=3D"Migrateanon-premisesMariaDBdatabasetoAmazonRDSforMariaDBusingnati=
+veMySQLtools-Tools"><strong>Tools</strong></h2>
+<ul class=3D"itemizedlist">
+<li class=3D"listitem"><p>Native MySQL tools:<span>&nbsp;</span><strong>mys=
+qldump</strong><span>&nbsp;</span>and<span>&nbsp;</span><strong>mysql</stro=
+ng></p></li>
+</ul>
+<h3 style=3D"text-decoration: none;" id=3D"Migrateanon-premisesMariaDBdatab=
+asetoAmazonRDSforMariaDBusingnativeMySQLtools-Epics">Epics</h3>
+<h4 id=3D"Migrateanon-premisesMariaDBdatabasetoAmazonRDSforMariaDBusingnati=
+veMySQLtools-Planthemigration"><strong>Plan the migration</strong></h4>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Task</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Description</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Skills required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=3D"confluenceTd">Validate source and target database versions and=
+ engines.</td>
+<td class=3D"confluenceTd"><p><br></p></td>
+<td class=3D"confluenceTd">DBA</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Identify hardware requirements for the target se=
+rver instance.</td>
+<td class=3D"confluenceTd"><p><br></p></td>
+<td class=3D"confluenceTd">DBA, SysAdmin</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Identify storage requirements (storage type and =
+capacity).</td>
+<td class=3D"confluenceTd"><p><br></p></td>
+<td class=3D"confluenceTd">DBA, SysAdmin</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Choose the proper instance type based on capacit=
+y, storage features, and network features.</td>
+<td class=3D"confluenceTd"><p><br></p></td>
+<td class=3D"confluenceTd">DBA, SysAdmin</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Identify the network access security requirement=
+s for source and target databases.</td>
+<td class=3D"confluenceTd"><p><br></p></td>
+<td class=3D"confluenceTd">DBA, SysAdmin</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Identify the application migration strategy.</td=
+>
+<td class=3D"confluenceTd"><p><br></p></td>
+<td class=3D"confluenceTd">DBA, SysAdmin, AppOwner</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id=3D"Migrateanon-premisesMariaDBdatabasetoAmazonRDSforMariaDBusingnati=
+veMySQLtools-Configuretheinfrastructure"><strong>Configure the infrastructu=
+re</strong></h4>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Task</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Description</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Skills required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=3D"confluenceTd">Create a virtual private cloud (VPC).</td>
+<td class=3D"confluenceTd"><p><br></p></td>
+<td class=3D"confluenceTd">SysAdmin</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Create security groups.</td>
+<td class=3D"confluenceTd"><p><br></p></td>
+<td class=3D"confluenceTd">SysAdmin</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Configure and start an Amazon RDS DB instance ru=
+nning MariaDB.</td>
+<td class=3D"confluenceTd"><p><br></p></td>
+<td class=3D"confluenceTd">SysAdmin</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id=3D"Migrateanon-premisesMariaDBdatabasetoAmazonRDSforMariaDBusingnati=
+veMySQLtools-Migratedata"><strong>Migrate data</strong></h4>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Task</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Description</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Skills required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=3D"confluenceTd">Use native MySQL tools or third-party tools to m=
+igrate database objects and data.</td>
+<td class=3D"confluenceTd"><p>In the source database, use mysqldump to crea=
+te an output file that contains database objects and data. In the target da=
+tabase, use mysql to restore the data.</p></td>
+<td class=3D"confluenceTd">DBA</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Validate the data.</td>
+<td class=3D"confluenceTd"><p>Check the source and target databases to conf=
+irm that the data migration was successful.</p></td>
+<td class=3D"confluenceTd">DBA</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id=3D"Migrateanon-premisesMariaDBdatabasetoAmazonRDSforMariaDBusingnati=
+veMySQLtools-Migratetheapplication"><strong>Migrate the application</strong=
+></h4>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Task</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Description</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Skills required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=3D"confluenceTd">Follow the application migration strategy.</td>
+<td class=3D"confluenceTd"><p><br></p></td>
+<td class=3D"confluenceTd">DBA, SysAdmin, AppOwner</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id=3D"Migrateanon-premisesMariaDBdatabasetoAmazonRDSforMariaDBusingnati=
+veMySQLtools-Cutover"><strong>Cut over</strong></h3>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Task</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Description</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Skills required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=3D"confluenceTd">Switch the application clients over to the new i=
+nfrastructure.</td>
+<td class=3D"confluenceTd"><p><br></p></td>
+<td class=3D"confluenceTd">DBA, SysAdmin, AppOwner</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"Migrateanon-premisesMariaDBdatabasetoAmazonRDSforMariaDBusingnati=
+veMySQLtools-Closetheproject"><strong>Close the project</strong></h2>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Task</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Description</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Skills required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=3D"confluenceTd">Shut down the temporary AWS resources.</td>
+<td class=3D"confluenceTd"><p><br></p></td>
+<td class=3D"confluenceTd">SysAdmin</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Review and validate the project documents.</td>
+<td class=3D"confluenceTd"><p><br></p></td>
+<td class=3D"confluenceTd">DBA, SysAdmin, AppOwner</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Gather metrics around time to migrate, % of manu=
+al vs. tool cost savings, etc.</td>
+<td class=3D"confluenceTd"><p><br></p></td>
+<td class=3D"confluenceTd">DBA, SysAdmin, AppOwner</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Close out the project and provide feedback.</td>
+<td class=3D"confluenceTd"><p><br></p></td>
+<td class=3D"confluenceTd">DBA, SysAdmin, AppOwner</td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_3456_432700398.1684352065764--

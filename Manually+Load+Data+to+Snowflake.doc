@@ -1,0 +1,362 @@
+Message-ID: <437246177.3429.1684349720005.JavaMail.confluence@ip-10-0-20-29>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_3428_1243964840.1684349720002"
+
+------=_Part_3428_1243964840.1684349720002
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Manually Load Data to Snowflake</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Manually Load Data to Snowflake</h1>
+    <div class=3D"Section1">
+        <p>In this short article we move 6 years of data from Mariadb to Sn=
+owflake manually.&nbsp;</p>
+<p>There are two approach to manually load data into Snowflake.<br>1) Inter=
+nal Staging<br>2) External Staging<br>3) Direct Load from S3</p>
+<p>Lets first test with Internal Staging</p>
+<h3 id=3D"ManuallyLoadDatatoSnowflake-Step1:PrepareCSVfiles"><strong>Step 1=
+: Prepare CSV files</strong></h3>
+<p>First we split 6 years of record into multiple records by each year and =
+fetch that record from mariadb.</p>
+<p><strong>Query</strong>:&nbsp;<strong><span style=3D"color: rgb(128,0,0);=
+">select</span>&nbsp;<span style=3D"color: rgb(0,0,128);">*</span>&nbsp;<sp=
+an style=3D"color: rgb(128,0,0);">from</span> <span style=3D"color: rgb(0,0=
+,0);">v_user_activities</span> <span style=3D"color: rgb(128,0,0);">where</=
+span> <span style=3D"color: rgb(0,0,0);">updated_at</span> <span style=3D"c=
+olor: rgb(128,0,0);">between</span> <span style=3D"color: rgb(0,128,0);">'2=
+015'</span> <span style=3D"color: rgb(128,0,0);">and</span> <span style=3D"=
+color: rgb(0,128,0);">'2015-12-31';</span></strong></p>
+<p>now we put above query into below command</p>
+<h3 id=3D"ManuallyLoadDatatoSnowflake-throughShellscript>">through Shell sc=
+ript&gt;</h3>
+<p><strong>mysql -B -u user database -h mysql_host -e "<span style=3D"color=
+: rgb(128,0,0);">select</span>&nbsp;<span style=3D"color: rgb(0,0,128);">*<=
+/span>&nbsp;<span style=3D"color: rgb(128,0,0);">as</span> <span style=3D"c=
+olor: rgb(128,0,0);">Year</span> <span style=3D"color: rgb(128,0,0);">from<=
+/span> <span style=3D"color: rgb(0,0,0);">v_user_activities</span> <span st=
+yle=3D"color: rgb(128,0,0);">where</span> <span style=3D"color: rgb(0,0,0);=
+">updated_at</span> <span style=3D"color: rgb(128,0,0);">between</span> <sp=
+an style=3D"color: rgb(0,128,0);">'2015'</span> <span style=3D"color: rgb(1=
+28,0,0);">and</span> <span style=3D"color: rgb(0,128,0);">'2015-12-31'</spa=
+n>;" | sed "s/'/'/;s/t/","/g;s/^/"/;s/$/"/;s/n//g"</strong><br><strong>&gt;=
+ 2015_v_user_activities.csv</strong></p>
+<p>Note:&nbsp;<strong>| sed "s/'/'/;s/t/","/g;s/^/"/;s/$/"/;s/n//g"</strong=
+> is optional, it is used to clear and transform data, in our case we can a=
+void it.</p>
+<h3 id=3D"ManuallyLoadDatatoSnowflake-throughSQLEditor>">through SQL Editor=
+&gt;</h3>
+<pre class=3D"SQLCode"><span class=3D"SQLKeyword"><strong><span style=3D"co=
+lor: rgb(128,0,0);">select</span><span style=3D"color: rgb(0,0,255);">&nbsp=
+;</span><span style=3D"color: rgb(0,0,128);">*</span> <span style=3D"color:=
+ rgb(128,0,0);">from</span> <span style=3D"color: rgb(0,0,0);">v_user_activ=
+ities</span> <span style=3D"color: rgb(128,0,0);">where</span> <span style=
+=3D"color: rgb(0,0,0);">updated_at</span> <span style=3D"color: rgb(128,0,0=
+);">between</span> <span style=3D"color: rgb(0,128,0);">'2015'</span> <span=
+ style=3D"color: rgb(128,0,0);">and</span> <span style=3D"color: rgb(0,128,=
+0);">'2015-12-31' INTO OUTFILE 'C:\path_to_csv\2015_v_user_activities.csv</=
+span></strong></span></pre>
+<p>simultaneously we fetch records of 2016,2017,2018,2019,2020 and 2021.</p=
+>
+<h3 id=3D"ManuallyLoadDatatoSnowflake-Step2:Movefilesintosnowflakestaging">=
+<strong>Step 2: Move files into snowflake staging</strong></h3>
+<p>Login into snowflake account, check which role and warehouse have permis=
+sion to load data.</p>
+<p><strong>Prepare Staging</strong></p>
+<p>First create file format which describe the loading csv to snowflake, ru=
+n below command</p>
+<p><strong>CREATE OR REPLACE FILE FORMAT test_csv</strong><br><strong>TYPE =
+=3D "CSV"</strong><br><strong>COMPRESSION =3D "GZIP"</strong><br><strong>FI=
+LE_EXTENSION=3D 'csv.gz'</strong><br><strong>SKIP_HEADER =3D 1</strong><br>=
+<strong>ERROR_ON_COLUMN_COUNT_MISMATCH=3DFALSE</strong><br><strong>EMPTY_FI=
+ELD_AS_NULL =3D TRUE;</strong></p>
+<p>Second create staging area where you put csv file, run below command</p>
+<p><strong>CREATE OR REPLACE STAGE testcsv_stage</strong><br><strong>FILE_F=
+ORMAT =3D test_csv</strong>;</p>
+<p>Skip above two scenario if you already created staging environment in sn=
+owflake.</p>
+<p><strong>For Linux&gt; PUT file:///tmp/mysql/data/sample_data.csv @testcs=
+v_stage <span class=3D"gi">AUTO_COMPRESS</span><span class=3D"p">=3D</span>=
+<span class=3D"ni">TRUE</span>;</strong></p>
+<p><strong><span class=3D"ni" style=3D"letter-spacing: 0.0px;">For window&g=
+t; PUT</span><span style=3D"letter-spacing: 0.0px;"> </span><span class=3D"=
+ni" style=3D"letter-spacing: 0.0px;">file</span><span class=3D"p" style=3D"=
+letter-spacing: 0.0px;">://</span><span class=3D"nf" style=3D"letter-spacin=
+g: 0.0px;color: rgb(0,160,0);">C</span><span class=3D"p" style=3D"letter-sp=
+acing: 0.0px;">:\</span><span class=3D"ni" style=3D"letter-spacing: 0.0px;"=
+>temp</span><span class=3D"p" style=3D"letter-spacing: 0.0px;">\</span><spa=
+n class=3D"ni" style=3D"letter-spacing: 0.0px;">load</span><span class=3D"p=
+" style=3D"letter-spacing: 0.0px;">\</span><span class=3D"gi" style=3D"lett=
+er-spacing: 0.0px;">sample_data</span><span class=3D"p" style=3D"letter-spa=
+cing: 0.0px;">.</span><span class=3D"gi" style=3D"letter-spacing: 0.0px;">c=
+sv</span><span style=3D"letter-spacing: 0.0px;"> </span><span class=3D"p" s=
+tyle=3D"letter-spacing: 0.0px;">@testcsv_stage</span><span style=3D"letter-=
+spacing: 0.0px;">&nbsp;</span><span class=3D"gi" style=3D"letter-spacing: 0=
+.0px;">AUTO_COMPRESS</span><span class=3D"p" style=3D"letter-spacing: 0.0px=
+;">=3D</span><span class=3D"ni" style=3D"letter-spacing: 0.0px;">TRUE</span=
+><span class=3D"p" style=3D"letter-spacing: 0.0px;">;</span></strong></p>
+<p><span class=3D"p" style=3D"letter-spacing: 0.0px;">Note:&nbsp;<br>Above =
+command can not be executed on snowflake worksheet because when you try to =
+execute it the "//" comment out whole string next to it.&nbsp;</span></p>
+<p><span class=3D"p" style=3D"letter-spacing: 0.0px;">Don't worry, we have =
+another solution, run above command into SnowSQL which is scripting shell o=
+f snowflake.</span></p>
+<p><strong>Step 3: Load data into table from internal staging</strong></p>
+<p><strong>COPY INTO mytable</strong><br><strong>FROM @<span class=3D"p">te=
+stcsv_stage</span></strong><br><strong>file_format =3D (format_name =3D 'te=
+st_csv')<br>pattern=3D'.*/.*/.*[.]csv[.]gz';<br></strong></p>
+<p>If you want to load multiple files at same time then add pattern otherwi=
+se skip it.</p>
+<p>Lets test with another External Staging</p>
+<p>First you need to create External Stage on AWS S3 with below command</p>
+<p><strong>create or replace stage mysql_ext_stage url=3D'<a rel=3D"nofollo=
+w">s3://snoflake/load/files/</a>'</strong><br><strong>credentials=3D (aws_k=
+ey_id=3D'xxxxxxxxxxxxxx' aws_secret_key=3D'xxxxxxxxxxxxxxxxxx');</strong><b=
+r><strong>encryption=3D (master_key =3D 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx');</=
+strong></p>
+<p>where&nbsp;<strong>url</strong> is the path of S3 staging,&nbsp;<strong>=
+credentials&nbsp;</strong>are the AWS admin provided credentials.</p>
+<p>now you can move data directly from RDS to S3, if you don't know you can=
+ get help with below article<br><a href=3D"/display/DT/Step_to_Configure_DM=
+S+for+S3">Step_to_Configure_DMS for S3</a></p>
+<p>run below command in snowflake to load data from external stage</p>
+<p><strong>COPY INTO mycsvtable</strong><br><strong>FROM @mysql_ext_stage/t=
+utorials/dataloading/contacts1.csv;</strong></p>
+<p><strong>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+</strong></p>
+<p>If we do not want to get stuck in internal or external stage then we can=
+ easily bypass these and directly load data from S3 with below command</p>
+<p><strong>COPY INTO mysql_table</strong><br><strong>FROM <a rel=3D"nofollo=
+w">s3://mybucket/data/files</a></strong><br><strong>credentials=3D (aws_key=
+_id=3D'xxxxxxxxxxxxxx' aws_secret_key=3D'xxxxxxxxxxxxxxxx')</strong><br><st=
+rong>encryption=3D (master_key =3D 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')</str=
+ong><br><strong>file_format =3D (format_name =3D my_csv_format);</strong></=
+p>
+<p>Note: above command is only consider when the file exists on S3.</p>
+    </div>
+</body>
+</html>
+------=_Part_3428_1243964840.1684349720002--

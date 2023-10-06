@@ -1,0 +1,388 @@
+Message-ID: <1995664828.3462.1684352408305.JavaMail.confluence@ip-10-0-20-29>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_3461_1014654686.1684352408304"
+
+------=_Part_3461_1014654686.1684352408304
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Percona Configuration and Performance Gathering SQL Script</titl=
+e>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Percona Configuration and Performance Gathering SQL Script</h1>
+    <div class=3D"Section1">
+        <p>---- pg_gather : Gather Performance metics and server configurat=
+ion<br>---- Version 2 for PG 10,11,12 - 25 - Jan -2021 <br>---- Version 3 S=
+upporting PG 13 - 06 - Feb -2021<br>---- Version 4 Bug fixes and Report enh=
+acements</p>
+<p>\pset tuples_only<br>\echo '\\t'<br>\echo '\\r'</p>
+<p>--Server information<br>\echo COPY pg_srvr FROM stdin;<br>\conninfo<br>\=
+echo '\\.'</p>
+<p>\echo COPY pg_gather FROM stdin;<br>COPY (SELECT current_timestamp,curre=
+nt_user,current_database(),version(),pg_postmaster_start_time(),pg_is_in_re=
+covery(),inet_client_addr(),inet_server_addr(),pg_conf_load_time(),pg_curre=
+nt_wal_lsn()) TO stdin;<br>\echo '\\.'</p>
+<p>--There is more Activity information in PG13 and PG12 than previous vers=
+ions<br>SELECT ( :SERVER_VERSION_NUM &gt; 120000 ) AS pg12, ( :SERVER_VERSI=
+ON_NUM &gt; 130000 ) AS pg13 \gset<br>\if :pg13<br>\echo COPY pg_get_activi=
+ty (datid, pid ,usesysid ,application_name ,state ,query ,wait_event_type ,=
+wait_event ,xact_start ,query_start ,backend_start ,state_change ,client_ad=
+dr, client_hostname, client_port, backend_xid ,backend_xmin, backend_type,s=
+sl ,sslversion ,sslcipher ,sslbits ,sslcompression ,ssl_client_dn ,ssl_clie=
+nt_serial,ssl_issuer_dn ,gss_auth ,gss_princ ,gss_enc,leader_pid) FROM stdi=
+n;<br>\elif :pg12<br>\echo COPY pg_get_activity (datid, pid ,usesysid ,appl=
+ication_name ,state ,query ,wait_event_type ,wait_event ,xact_start ,query_=
+start ,backend_start ,state_change ,client_addr, client_hostname, client_po=
+rt, backend_xid ,backend_xmin, backend_type,ssl ,sslversion ,sslcipher ,ssl=
+bits ,sslcompression ,ssl_client_dn ,ssl_client_serial,ssl_issuer_dn ,gss_a=
+uth ,gss_princ ,gss_enc) FROM stdin;<br>\else<br>\echo COPY pg_get_activity=
+ (datid, pid ,usesysid ,application_name ,state ,query ,wait_event_type ,wa=
+it_event ,xact_start ,query_start ,backend_start ,state_change ,client_addr=
+, client_hostname, client_port, backend_xid ,backend_xmin, backend_type,ssl=
+ ,sslversion ,sslcipher ,sslbits ,sslcompression ,ssl_client_dn ) FROM stdi=
+n;<br>\endif<br>\copy (select * from pg_stat_get_activity(NULL) where pid !=
+=3D pg_backend_pid()) to stdin<br>\echo '\\.'</p>
+<p><br>--INSERT statements<br>--SELECT 'SELECT pg_sleep(1); SELECT ''INSERT=
+ INTO pg_get_wait VALUES (' || g ||',''|| pid || '','' || CASE WHEN wait_ev=
+ent IS NULL THEN ''NULL);'' ELSE ''''''''|| wait_event ||'''''');'' END FRO=
+M pg_stat_activity WHERE state !=3D ''idle'';' FROM generate_series(1,10) g=
+;<br>--\gexec<br>-- SELECT pg_stat_get_backend_pid(s.backendid) AS pid, pg_=
+stat_get_backend_wait_event(s.backendid) AS wait_event FROM (SELECT pg_stat=
+_get_backend_idset() AS backendid) AS s WHERE pg_stat_get_backend_pid(s.bac=
+kendid) is not null;</p>
+<p>--\echo COPY pg_get_wait (itr,pid,wait_event) FROM stdin;<br>--SELECT 'S=
+ELECT pg_sleep(1); SELECT ''' || g ||'''||E''\t''|| pid || E''\t'' || CASE =
+WHEN wait_event IS NULL THEN ''\N'' ELSE wait_event END FROM pg_stat_get_ac=
+tivity(NULL) WHERE state !=3D ''idle'';' FROM generate_series(1,10) g;<br>-=
+-\gexec<br>--\echo '\\.'<br>--\a</p>
+<p>--A much lightweight implimentation 26/12/2020<br>\a<br>PREPARE pidevent=
+s AS<br>SELECT pid || E'\t' || wait_event FROM pg_stat_activity WHERE state=
+ !=3D 'idle' and pid !=3D pg_backend_pid();<br>--SELECT pg_stat_get_backend=
+_pid(s.backendid) || E'\t' || pg_stat_get_backend_wait_event(s.backendid) F=
+ROM (SELECT pg_stat_get_backend_idset() AS backendid) AS s WHERE pg_stat_ge=
+t_backend_wait_event(s.backendid) NOT IN ('AutoVacuumMain','LogicalLauncher=
+Main');<br>\echo COPY pg_pid_wait (pid,wait_event) FROM stdin;<br>SELECT 'S=
+ELECT pg_sleep(0.01); EXECUTE pidevents;' FROM generate_series(1,1000) g;<b=
+r>\gexec<br>\echo '\\.'<br>\a</p>
+<p><br>--Ideas to try. Try writing to a seperate output file and run it her=
+e again<br>--If not possible, develop a clean up script using sed</p>
+<p>--Database level information<br>\echo COPY pg_get_db (datid,datname,xact=
+_commit,xact_rollback,blks_fetch,blks_hit,tup_returned,tup_fetched,tup_inse=
+rted,tup_updated,tup_deleted,temp_files,temp_bytes,deadlocks,blk_read_time,=
+blk_write_time,db_size) FROM stdin;<br>COPY (SELECT d.oid, d.datname, <br>p=
+g_stat_get_db_xact_commit(d.oid) AS xact_commit,<br>pg_stat_get_db_xact_rol=
+lback(d.oid) AS xact_rollback,<br>pg_stat_get_db_blocks_fetched(d.oid) AS b=
+lks_fetch,<br>pg_stat_get_db_blocks_hit(d.oid) AS blks_hit,<br>pg_stat_get_=
+db_tuples_returned(d.oid) AS tup_returned,<br>pg_stat_get_db_tuples_fetched=
+(d.oid) AS tup_fetched,<br>pg_stat_get_db_tuples_inserted(d.oid) AS tup_ins=
+erted,<br>pg_stat_get_db_tuples_updated(d.oid) AS tup_updated,<br>pg_stat_g=
+et_db_tuples_deleted(d.oid) AS tup_deleted,<br>pg_stat_get_db_temp_files(d.=
+oid) AS temp_files,<br>pg_stat_get_db_temp_bytes(d.oid) AS temp_bytes,<br>p=
+g_stat_get_db_deadlocks(d.oid) AS deadlocks,<br>pg_stat_get_db_blk_read_tim=
+e(d.oid) AS blk_read_time,<br>pg_stat_get_db_blk_write_time(d.oid) AS blk_w=
+rite_time,<br>pg_database_size(d.oid) AS db_size<br>FROM pg_database d) TO =
+stdin;<br>\echo '\\.'</p>
+<p>--pg_settings information<br>\echo COPY pg_get_confs (name,setting,unit)=
+ FROM stdin;<br>COPY ( SELECT name,setting,unit FROM pg_settings ) TO stdin=
+;<br>\echo '\\.'</p>
+<p>--Major tables and indexes in current schema<br>\echo COPY pg_get_class =
+FROM stdin;<br>COPY (SELECT oid,relname,relkind,relnamespace FROM pg_class =
+WHERE relnamespace NOT IN (SELECT oid FROM pg_namespace WHERE nspname like =
+'pg%_temp_%' OR nspname in ('pg_catalog','information_schema'))) TO stdin;<=
+br>\echo '\\.'</p>
+<p>--Index usage info<br>\echo COPY pg_get_index FROM stdin;<br>COPY (SELEC=
+T indexrelid,indrelid,indisunique,indisprimary, pg_stat_get_numscans(indexr=
+elid),pg_table_size(indexrelid) from pg_index) TO stdin;<br>\echo '\\.'</p>
+<p>--Table usage Information<br>\echo COPY pg_get_rel FROM stdin;<br>COPY (=
+select oid,relnamespace, relpages::bigint blks,pg_stat_get_live_tuples(oid)=
+ AS n_live_tup,pg_stat_get_dead_tuples(oid) AS n_dead_tup,<br>pg_relation_s=
+ize(oid) only_tab_size, pg_table_size(oid) tot_tab_size, pg_total_relation_=
+size(oid) "tot_tab+idx", age(relfrozenxid) rel_age,<br>GREATEST(pg_stat_get=
+_last_autovacuum_time(oid),pg_stat_get_last_vacuum_time(oid)),<br>GREATEST(=
+pg_stat_get_last_autoanalyze_time(oid),pg_stat_get_last_analyze_time(oid)),=
+<br>pg_stat_get_vacuum_count(oid)+pg_stat_get_autovacuum_count(oid)<br>FROM=
+ pg_class WHERE relkind in ('r','t','p','m','')) TO stdin;<br>\echo '\\.'</=
+p>
+<p>--Blocking information<br>\echo COPY pg_get_block FROM stdin;<br>COPY (S=
+ELECT blocked_locks.pid AS blocked_pid,<br>blocked_activity.usename AS bloc=
+ked_user,<br>blocked_activity.client_addr as blocked_client_addr,<br>blocke=
+d_activity.client_hostname as blocked_client_hostname,<br>blocked_activity.=
+application_name as blocked_application_name,<br>blocked_activity.wait_even=
+t_type as blocked_wait_event_type,<br>blocked_activity.wait_event as blocke=
+d_wait_event,<br>blocked_activity.query AS blocked_statement,<br>blocked_ac=
+tivity.xact_start AS blocked_xact_start,<br>blocking_locks.pid AS blocking_=
+pid,<br>blocking_activity.usename AS blocking_user,<br>blocking_activity.cl=
+ient_addr as blocking_client_addr,<br>blocking_activity.client_hostname as =
+blocking_client_hostname,<br>blocking_activity.application_name as blocking=
+_application_name,<br>blocking_activity.wait_event_type as blocking_wait_ev=
+ent_type,<br>blocking_activity.wait_event as blocking_wait_event,<br>blocki=
+ng_activity.query AS current_statement_in_blocking_process,<br>blocking_act=
+ivity.xact_start AS blocking_xact_start<br>FROM pg_catalog.pg_locks blocked=
+_locks<br>JOIN pg_catalog.pg_stat_activity blocked_activity ON blocked_acti=
+vity.pid =3D blocked_locks.pid<br>JOIN pg_catalog.pg_locks blocking_locks <=
+br>ON blocking_locks.locktype =3D blocked_locks.locktype<br>AND blocking_lo=
+cks.DATABASE IS NOT DISTINCT FROM blocked_locks.DATABASE<br>AND blocking_lo=
+cks.relation IS NOT DISTINCT FROM blocked_locks.relation<br>AND blocking_lo=
+cks.page IS NOT DISTINCT FROM blocked_locks.page<br>AND blocking_locks.tupl=
+e IS NOT DISTINCT FROM blocked_locks.tuple<br>AND blocking_locks.virtualxid=
+ IS NOT DISTINCT FROM blocked_locks.virtualxid<br>AND blocking_locks.transa=
+ctionid IS NOT DISTINCT FROM blocked_locks.transactionid<br>AND blocking_lo=
+cks.classid IS NOT DISTINCT FROM blocked_locks.classid<br>AND blocking_lock=
+s.objid IS NOT DISTINCT FROM blocked_locks.objid<br>AND blocking_locks.objs=
+ubid IS NOT DISTINCT FROM blocked_locks.objsubid<br>AND blocking_locks.pid =
+!=3D blocked_locks.pid<br>JOIN pg_catalog.pg_stat_activity blocking_activit=
+y ON blocking_activity.pid =3D blocking_locks.pid<br>WHERE NOT blocked_lock=
+s.granted ORDER BY blocked_activity.pid ) TO stdin;<br>\echo '\\.'</p>
+<p>--select * from pg_stat_replication;<br>\echo COPY pg_replication_stat F=
+ROM stdin;<br>COPY ( <br>SELECT usename, client_addr, client_hostname, stat=
+e, sent_lsn, write_lsn, flush_lsn, replay_lsn, sync_state FROM pg_stat_repl=
+ication<br>) TO stdin;<br>\echo '\\.'</p>
+<p>--Archive status<br>\echo COPY pg_archiver_stat FROM stdin;<br>COPY (<br=
+>select archived_count,last_archived_wal,last_archived_time,last_failed_wal=
+,last_failed_time from pg_stat_archiver<br>) TO stdin;<br>\echo '\\.'</p>
+<p>--Bloat estimate on a 64bit machine with PG version above 9.0. <br>\echo=
+ COPY pg_tab_bloat FROM stdin;<br>COPY ( SELECT<br>table_oid, cc.relname AS=
+ tablename, cc.relpages,<br>CEIL((cc.reltuples*((datahdr+ma- (CASE WHEN dat=
+ahdr%ma=3D0 THEN ma ELSE datahdr%ma END))+nullhdr2+4))/(bs-20::float)) AS e=
+st_pages<br>FROM (<br>SELECT<br>ma,bs,table_oid,<br>(datawidth+(hdr+ma-(cas=
+e when hdr%ma=3D0 THEN ma ELSE hdr%ma END)))::numeric AS datahdr,<br>(maxfr=
+acsum*(nullhdr+ma-(case when nullhdr%ma=3D0 THEN ma ELSE nullhdr%ma END))) =
+AS nullhdr2<br>FROM (<br>SELECT s.starelid as table_oid ,23 AS hdr, 8 AS ma=
+, 8192 AS bs, SUM((1-stanullfrac)*stawidth) AS datawidth, MAX(stanullfrac) =
+AS maxfracsum,<br>23 +( SELECT 1+count(*)/8 FROM pg_statistic s2 WHERE stan=
+ullfrac&lt;&gt;0 AND s.starelid =3D s2.starelid ) AS nullhdr<br>FROM pg_sta=
+tistic s <br>GROUP BY 1,2<br>) AS foo<br>) AS rs<br>JOIN pg_class cc ON cc.=
+oid =3D rs.table_oid<br>JOIN pg_namespace nn ON cc.relnamespace =3D nn.oid =
+AND nn.nspname &lt;&gt; 'information_schema' <br>) TO stdin;<br>\echo '\\.'=
+</p>
+<p><br>--Toast<br>\echo COPY pg_get_toast FROM stdin;<br>COPY (<br>SELECT o=
+id, reltoastrelid FROM pg_class WHERE reltoastrelid !=3D 0 ) TO stdin;<br>\=
+echo '\\.'</p>
+<p><br>--active session again<br>\a<br>\echo COPY pg_pid_wait (pid,wait_eve=
+nt) FROM stdin;<br>SELECT 'SELECT pg_sleep(0.01); EXECUTE pidevents;' FROM =
+generate_series(1,1000) g;<br>\gexec<br>\echo '\\.'<br>\a</p>
+    </div>
+</body>
+</html>
+------=_Part_3461_1014654686.1684352408304--
